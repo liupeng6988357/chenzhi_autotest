@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="基础信息模块">
+    <test name="学生模块">
+        <classes >
+            <class name="com.chenzhi.auto_test.base_information.student.AddStudent" ></class>
+        </classes>
+    </test>
+    <test name="教师模块">
+        <classes>
+            <class name="com.chenzhi.auto_test.base_information.teacher.AddTeacher"></class>
+        </classes>
+    </test>
+</suite>

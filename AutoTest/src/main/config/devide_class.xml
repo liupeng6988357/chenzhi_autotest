@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="分班模块">
+    <test name="创建分班任务">
+        <classes>
+            <class name="com.chenzhi.test.devideclass.Add_Delete_UpdateTaskTest" ></class>
+        </classes>
+    </test>
+
+    <!--
+    <test name="编辑分班任务">
+        <classes>
+            <class name="com.chenzhi.test.devideclass.UpdateTask"></class>
+        </classes>
+    </test>
+
+    <test name="删除分班任务">
+        <classes>
+            <class name="com.chenzhi.auto_test.devide_class.DeleteTask"></class>
+        </classes>
+    </test>
+
+    -->
+</suite>

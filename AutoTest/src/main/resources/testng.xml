@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="辰知自动化测试">
+
+    <!--reportng测试报告-->
+    <listeners >
+        <listener class-name="com.chenzhi.test.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+
+    <suite-files >
+        <!--登录模块-->
+        <suite-file path="../config/Account.xml"></suite-file>
+
+<!--        &lt;!&ndash; 分班模块 &ndash;&gt;-->
+<!--        <suite-file path="../config/devide_class.xml"></suite-file>-->
+
+<!--        &lt;!&ndash;排课模块 &ndash;&gt;-->
+<!--        <suite-file path="../config/course_schedul.xml"></suite-file>-->
+
+
+<!--        &lt;!&ndash; 选科模块 &ndash;&gt;-->
+<!--        <suite-file path="../config/select_course.xml"></suite-file>-->
+
+        <!--基础信息模块
+        <suite-file path="../config/base_information.xml"></suite-file>
+        -->
+
+    </suite-files>
+
+</suite>
+
+
+

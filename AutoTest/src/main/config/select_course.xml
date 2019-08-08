@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="选科模块">
+    <test name="创建选科任务">
+        <classes>
+            <class name="com.chenzhi.test.selectcourse.CreateTask" ></class>
+        </classes>
+    </test>
+</suite>
