@@ -1,5 +1,6 @@
 package com.chenzhi.test.account;
 
+import com.chenzhi.module.business.LoginFunction;
 import com.chenzhi.module.domain.HomePageElement;
 import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.util.Methods;
@@ -47,11 +48,12 @@ public class TeacherLoginTest {
         @Test
         public void tea_LoginTest() throws Exception{
 
-            loginTest("13022862399","111111");
+            LoginFunction.teacherLoginTest(methods,"13022862399","111111");
 
             Thread.sleep(5000);
 
-            String icoText = methods.getWebElement(HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getKey(),HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getPath()).getText();
+            String icoText = methods.getWebElement(HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getKey(),
+                    HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getPath()).getText();
 
             Assert.assertEquals(icoText,"高新一中 赵四","Not equals: ");
 
@@ -65,11 +67,14 @@ public class TeacherLoginTest {
         @Test(description = "密码错误登录功能测试")
         public void tea_LoginAccountTest() throws Exception{
 
-            loginTest("111","120");
+            LoginFunction.teacherLoginTest(methods,"111","120");
 
             Thread.sleep(1000);
 
-            Assert.assertEquals(methods.getWebElement(LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getKey(),LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getPath()).getText(),"账号信息有误","Not equals: ");
+            String errorText = methods.getWebElement(LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getKey(),
+                    LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getPath()).getText();
+
+            Assert.assertEquals(errorText,"帐号信息有误","Not equals: ");
 
         }
 
@@ -81,27 +86,15 @@ public class TeacherLoginTest {
         @Test(description = "密码错误登录功能测试")
         public void tea_LoginPasswordTest() throws Exception{
 
-            loginTest("111","120");
+            LoginFunction.teacherLoginTest(methods,"111","120");
 
             Thread.sleep(1000);
 
-            Assert.assertEquals(methods.getWebElement(LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getKey(),LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getPath()).getText(),"账号信息有误","Not equals: ");
+            String errorText = methods.getWebElement(LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getKey(),
+                    LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getPath()).getText();
 
+            Assert.assertEquals(errorText,"帐号信息有误","Not equals: ");
         }
-
-        /**登录操作执行*/
-        private void loginTest(String userName, String password) {
-
-            methods.getWebElement(LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getPath()).click();
-
-            methods.getWebElement(LoginPageElement.USERNAME_INPUT_XPATH.getKey(),LoginPageElement.USERNAME_INPUT_XPATH.getPath()).sendKeys(userName);
-
-            methods.getWebElement(LoginPageElement.PASSWORD_INPUT_XPATH.getKey(),LoginPageElement.PASSWORD_INPUT_XPATH.getPath()).sendKeys(password);
-
-            methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).click();
-
-        }
-
 
 }
 

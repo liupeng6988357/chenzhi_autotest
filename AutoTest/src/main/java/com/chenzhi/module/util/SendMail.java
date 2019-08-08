@@ -131,7 +131,7 @@ public class SendMail {
             mimeMultiPart.addBodyPart(bodyPart);
             // 添加附件
             List<String> fileAddressList = new ArrayList<String>();
-            fileAddressList.add("D:\\autotest\\AutoTest\\test-output\\testreport.html");
+            fileAddressList.add("D:\\chenzhi_autotest\\AutoTest\\test-output\\testreport.html");
             if (fileAddressList != null) {
                 BodyPart attchPart = null;
                 for (int i = 0; i < fileAddressList.size(); i++) {
