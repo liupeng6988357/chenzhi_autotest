@@ -12,6 +12,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.util.List;
+import java.util.Map;
+
 public class StudentLoginTest {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
@@ -93,5 +96,67 @@ public class StudentLoginTest {
         Assert.assertEquals(errorMessage,"登录信息有误","Not equals: ");
     }
 
+    /**
+     * 测试省份下拉框值集
+     * @throws Exception
+     */
+    @Test
+    public void provinceValuesTest() throws Exception{
 
+        List<String> selectValuesList = LoginFunction.getProvinceValues(methods);
+        for (int i = 0; i < selectValuesList.size(); i++) {
+            System.out.println(selectValuesList.get(i));
+        }
+    }
+
+    /**
+     * 测试城市下拉框值集
+     * @throws Exception
+     */
+    @Test
+    public void cityValuesTest() throws Exception{
+
+        Map<String,List<String>> cityValuesMap = LoginFunction.getCityValues(methods);
+
+        for (Map.Entry<String,List<String>> entry : cityValuesMap.entrySet()) {
+            System.out.println("===========key = " + entry.getKey()+"===============");
+            for (int i = 0; i <entry.getValue().size() ; i++) {
+                System.out.print(entry.getValue().get(i));
+            }
+            System.out.println("");
+        }
+    }
+
+    /**
+     * 测试县区下拉框值集
+     * @throws Exception
+     */
+    @Test
+    public void countyValuesTest() throws Exception{
+
+        Map<String,Map<String,List<String>>> countyValuesMap = LoginFunction.getCountyValues(methods);
+
+        for (Map.Entry<String,Map<String,List<String>>> entry : countyValuesMap.entrySet()) {
+            System.out.println("===========province = " + entry.getKey()+"===============");
+            for (Map.Entry<String,List<String>> entrys : entry.getValue().entrySet()) {
+                System.out.println("*****city = "+ entrys.getKey()+"*****");
+                for (int i = 0; i < entrys.getValue().size(); i++) {
+                    System.out.println(entrys.getValue().get(i));
+                }
+            }
+            System.out.println("");
+        }
+    }
+
+
+    /**
+     * 测试学校下拉框值集
+     * @throws Exception
+     */
+    @Test
+    public void schoolValuesTest() throws Exception{
+
+        LoginFunction.getSchoolValues(methods);
+
+    }
 }
