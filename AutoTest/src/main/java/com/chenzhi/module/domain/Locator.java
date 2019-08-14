@@ -20,7 +20,6 @@ public class Locator{
         return driver.findElement(By.xpath(xpath));
     }
 
-
     /**通过CLASSNAME获取元素*/
     public WebElement getElementByClassName(String classname){
         return driver.findElement(By.className(classname));
@@ -31,6 +30,10 @@ public class Locator{
         return driver.findElement(By.linkText(linkPath));
     }
 
+    /**通过id获取元素*/
+    public WebElement getElementById(String id){
+        return driver.findElement(By.id(id));
+    }
 
     /**通过CLASSNAME获取元素列表*/
     public List<WebElement> getElementsByClassName(String classname){
@@ -51,5 +54,22 @@ public class Locator{
     public Select getSelectByLink(String linkPath){
         return new Select(driver.findElement(By.linkText(linkPath)));
     }
+
+
+    /**通过xpath获取webelement列表*/
+    public List<WebElement> getElementsByXpath(String xpath){
+        return driver.findElements(By.xpath(xpath));
+    }
+
+    /**通过linkText获取webelement列表*/
+    public List<WebElement> getElementsByLink(String xpath){
+        return driver.findElements(By.linkText(xpath));
+    }
+
+    /**页面框架切换方法封装【name,id】*/
+    public  void switchFrame(String path){
+        driver.switchTo().frame(path);
+    }
+
 
 }

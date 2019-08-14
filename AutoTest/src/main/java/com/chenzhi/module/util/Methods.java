@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 
 public class Methods extends Locator {
 
@@ -26,6 +28,8 @@ public class Methods extends Locator {
         }else if (key.contains("Link")){
 
             return getElementByLink(path);
+        }else if(key.contains("id")){
+            return  getElementById(path);
         }else {
             return null;
         }
@@ -47,5 +51,28 @@ public class Methods extends Locator {
         }else {
             return null;
         }
+    }
+
+    /**封装获取WebElement对象的方法*/
+    public List<WebElement> getWebElementList(String key, String path){
+        if (key.contains("xpath")){
+
+            return getElementsByXpath(path);
+
+        }else if (key.contains("ClassName")){
+
+            return getElementsByClassName(path);
+
+        }else if (key.contains("Link")){
+
+            return getElementsByLink(path);
+        }else {
+            return null;
+        }
+    }
+
+    @Override
+    public void switchFrame(String IFrame) {
+        super.switchFrame(IFrame);
     }
 }

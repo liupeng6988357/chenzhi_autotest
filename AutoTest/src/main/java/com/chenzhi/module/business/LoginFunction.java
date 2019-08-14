@@ -170,14 +170,20 @@ public class LoginFunction {
 
             methods.getWebSelect(LoginPageElement.PROVINCE_SELECT_XPATH.getKey(),LoginPageElement.PROVINCE_SELECT_XPATH.getPath()).selectByVisibleText(entry.getKey());
 
+            Thread.sleep(2000);
+
             for (Map.Entry<String,List<String>> maps : entry.getValue().entrySet()) {
 
                 methods.getWebSelect(LoginPageElement.CITY_SELECT_XPATH.getKey(),LoginPageElement.CITY_SELECT_XPATH.getPath()).selectByVisibleText(maps.getKey());
+
+                Thread.sleep(2000);
 
                 System.out.println("*****city = "+ maps.getKey()+"*****");
                 for (int i = 0; i < maps.getValue().size(); i++) {
 
                     methods.getWebSelect(LoginPageElement.COUNTY_SELECT_XPATH.getKey(),LoginPageElement.COUNTY_SELECT_XPATH.getPath()).selectByVisibleText(maps.getValue().get(i));
+
+                    Thread.sleep(2000);
 
                     Select schoolSelect = methods.getWebSelect(LoginPageElement.SCHOOL_SELECT_XPATH.getKey(),LoginPageElement.SCHOOL_SELECT_XPATH.getPath());
 
