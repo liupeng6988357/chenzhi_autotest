@@ -15,6 +15,11 @@ public class Locator{
         this.driver = driver;
     }
 
+
+    public WebDriver getDriver() {
+        return driver;
+    }
+
     /**通过xpath获取元素*/
     public WebElement getElementByXpath(String xpath){
         return driver.findElement(By.xpath(xpath));
@@ -33,6 +38,11 @@ public class Locator{
     /**通过id获取元素*/
     public WebElement getElementById(String id){
         return driver.findElement(By.id(id));
+    }
+
+    /**通过css_seclector定位元素*/
+    public WebElement getElementByCss_Secltor(String css_selector){
+        return driver.findElement(By.cssSelector(css_selector));
     }
 
     /**通过CLASSNAME获取元素列表*/

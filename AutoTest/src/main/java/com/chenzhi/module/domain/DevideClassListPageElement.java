@@ -14,15 +14,15 @@ public enum DevideClassListPageElement {
     /**切换分班框架页面*/
     IFRAME_DEVIDE_CLASS_ID("iframe_devide_class_id","iframe"),
     /**获取年级下拉框元素*/
-    GRADE_SELECT_ID("grade_select_id","select1"),
+    GRADE_SELECT_CLASSNAME("grade_select_ClassName","el-input__inner"),
     /**年级下拉框值集*/
     GRADE_SELECT_VALUES_XPATH("grade_select_value_xpath","/html/body/div[3]/div[1]/div[1]/ul/li"),
     /**获取分班类型下拉框*/
-    DEVIDE_CLASS_TYPE_XPATH("devide_class_type_xpath","//*[@id=\"taskList\"]/div[2]/div/div[2]/div/div/div[3]/div/div/div/input"),
+    DEVIDE_CLASS_TYPE_CLASSNAME("devide_class_type_ClassName","el-input__inner"),
     /**获取分班类型下拉框值集*/
-    DEVIDE_CLASS_TYPE_VALUES_XPATH("devide_class_type_values_xpath","/html/body/div[5]/div[1]/div[1]/ul/li"),
+    DEVIDE_CLASS_TYPE_VALUES_XPATH("devide_class_type_values_xpath","/html/body/div[4]/div[1]/div[1]/ul/li"),
     /**获取班级类型下拉框*/
-    CLASS_TYPE_XPATH("class_type_xpath","//*[@id=\"taskList\"]/div[2]/div/div[2]/div/div/div[4]/div/div/div[1]/input"),
+    CLASS_TYPE_CLASSNAME("class_type_ClassName","el-input__inner"),
     /**获取班级类型下拉框值集*/
     CLASS_TYPE_VALUES_XPATH("class_type_values_xpath","/html/body/div[5]/div[1]/div[1]/ul/li"),
     /**创建分班任务的确定按钮*/

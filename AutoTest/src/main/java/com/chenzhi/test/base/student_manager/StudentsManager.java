@@ -1,18 +1,18 @@
-package com.chenzhi.test.devideclass;
+package com.chenzhi.test.base.student_manager;
 
-
-import com.chenzhi.module.business.DevideClassFunction;
 import com.chenzhi.module.business.HomeFunction;
 import com.chenzhi.module.business.LoginFunction;
+import com.chenzhi.module.business.StudentManagerFunction;
 import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.util.Methods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Add_Delete_UpdateTaskTest {
+public class StudentsManager {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
 
@@ -40,30 +40,27 @@ public class Add_Delete_UpdateTaskTest {
 
         Thread.sleep(5000);
 
-        chromeDriver.close();
+        //chromeDriver.close();
     }
 
+
     /**
-     * 创建分班任务功能测试
+     * 异常功能测试用例
      * @throws Exception
      */
     @Test
-    public void createTask() throws Exception{
+    public void uploadStudents() throws Exception{
 
-        Thread.sleep(10000);
+        /**进入学生管理页面*/
+        HomeFunction.enterStudentManagerPage(methods);
 
-        HomeFunction.enterDevideClassPage(methods);
+        /**上传功能执行*/
+        String resultText = StudentManagerFunction.uploadStudentS(methods);
 
-        Thread.sleep(10000);
-
-        DevideClassFunction.createDevideClassTask("test5",methods);
-
-    }
-
-
-    @Test
-    public void deleteTask() throws Exception{
+        /**判断执行是否成功*/
+        Assert.assertEquals(resultText,"734","Not equals: ");
 
     }
+
 
 }

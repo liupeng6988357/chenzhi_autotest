@@ -29,7 +29,11 @@ public class Methods extends Locator {
 
             return getElementByLink(path);
         }else if(key.contains("id")){
+
             return  getElementById(path);
+        }else if (key.contains("Css_Selector")){
+
+            return getElementByCss_Secltor(path);
         }else {
             return null;
         }

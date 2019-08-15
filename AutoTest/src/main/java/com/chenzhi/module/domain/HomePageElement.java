@@ -8,7 +8,11 @@ public enum HomePageElement {
     /**学生账户信息*/
     STUDENT_ACCOUNTNAME_ICO_XPATH("student_accountName_xpath","html/body/div[1]/div/div[2]/div[2]/ul/li[1]/a/i[2]"),
     /**分班链接元素*/
-    DEVIDED_CLASS_TITLE_LINK("devided_class_title_Link","分班");
+    DEVIDED_CLASS_TITLE_LINK("devided_class_title_Link","分班"),
+    /**基础信息设置*/
+    BASE_INFORMATION_XPATH("base_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/a[3]"),
+    /**基础信息_学生管理*/
+    BASE_INFORMATION_STUDENT_XPATH("student_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/ul/li[4]/a");
 
     private final String key;
     private final String path;

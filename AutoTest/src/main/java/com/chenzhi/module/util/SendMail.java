@@ -47,7 +47,7 @@ public class SendMail {
         // 验证收件人邮箱地址
         List<String> toAddressList = new ArrayList<String>();
         toAddressList.add("WJ18966971512@163.com");
-        toAddressList.add("1124985112@qq.com");
+        toAddressList.add("liupeng@tchenedu.cn");
         StringBuffer buffer = new StringBuffer();
         if (!toAddressList.isEmpty()) {
             String regEx = "^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";

@@ -15,25 +15,24 @@ public class DevideClassFunction {
 
         methods.getWebElement(DevideClassListPageElement.TASK_DEVIDE_CLASS_NAME_INPUT.getKey(), DevideClassListPageElement.TASK_DEVIDE_CLASS_NAME_INPUT.getPath()).sendKeys(taskName);
 
+        Thread.sleep(5000);
 
         /**选择年级*/
-        methods.getWebElement(DevideClassListPageElement.GRADE_SELECT_ID.getKey(),DevideClassListPageElement.GRADE_SELECT_ID.getPath()).click();
-
-        Thread.sleep(5000);
+        methods.getWebElementList(DevideClassListPageElement.GRADE_SELECT_CLASSNAME.getKey(),DevideClassListPageElement.GRADE_SELECT_CLASSNAME.getPath()).get(1).click();
 
         methods.getWebElementList(DevideClassListPageElement.GRADE_SELECT_VALUES_XPATH.getKey(),DevideClassListPageElement.GRADE_SELECT_VALUES_XPATH.getPath()).get(0).click();
 
-        /**选择分班类型*/
-        methods.getWebElement(DevideClassListPageElement.DEVIDE_CLASS_TYPE_XPATH.getKey(),DevideClassListPageElement.DEVIDE_CLASS_TYPE_XPATH.getPath()).click();
-
         Thread.sleep(5000);
+
+        /**选择分班类型*/
+        methods.getWebElementList(DevideClassListPageElement.DEVIDE_CLASS_TYPE_CLASSNAME.getKey(),DevideClassListPageElement.DEVIDE_CLASS_TYPE_CLASSNAME.getPath()).get(2).click();
 
         methods.getWebElementList(DevideClassListPageElement.GRADE_SELECT_VALUES_XPATH.getKey(),DevideClassListPageElement.DEVIDE_CLASS_TYPE_VALUES_XPATH.getPath()).get(0).click();
 
-        /**选择班级类型*/
-        methods.getWebElement(DevideClassListPageElement.CLASS_TYPE_XPATH.getKey(),DevideClassListPageElement.CLASS_TYPE_XPATH.getPath()).click();
-
         Thread.sleep(5000);
+
+        /**选择班级类型*/
+        methods.getWebElementList(DevideClassListPageElement.CLASS_TYPE_CLASSNAME.getKey(),DevideClassListPageElement.CLASS_TYPE_CLASSNAME.getPath()).get(3).click();
 
         methods.getWebElementList(DevideClassListPageElement.CLASS_TYPE_VALUES_XPATH.getKey(),DevideClassListPageElement.CLASS_TYPE_VALUES_XPATH.getPath()).get(0).click();
 

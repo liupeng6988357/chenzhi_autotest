@@ -172,6 +172,7 @@ public class LoginFunction {
 
             Thread.sleep(2000);
 
+            System.out.println("----------province = "+entry.getKey()+"---------");
             for (Map.Entry<String,List<String>> maps : entry.getValue().entrySet()) {
 
                 methods.getWebSelect(LoginPageElement.CITY_SELECT_XPATH.getKey(),LoginPageElement.CITY_SELECT_XPATH.getPath()).selectByVisibleText(maps.getKey());
@@ -189,11 +190,13 @@ public class LoginFunction {
 
                     List<WebElement> schooleValuesList = schoolSelect.getOptions();
 
+                    System.out.println("*****county = "+maps.getValue().get(i)+"****");
+
                     for (int j = 0; j < schooleValuesList.size(); j++) {
 
-                        String county =  schooleValuesList.get(j).getText();
+                        String school =  schooleValuesList.get(j).getText();
 
-                        System.out.println(county);
+                        System.out.println(school);
 
                     }
 
