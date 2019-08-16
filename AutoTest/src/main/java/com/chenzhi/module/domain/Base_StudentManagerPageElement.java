@@ -10,8 +10,9 @@ public enum  Base_StudentManagerPageElement {
     /**上传结果文案*/
     UPLOAD_RESULT_TEXT_XPATH("upload_result_text_xpath","/html/body/div[1]/div/div/div/div[2]/form/span/div/div"),
     /**学生总人数*/
-    STUDENT_SUM_NUMBER_ID("student_sum_Number_id","layui-laypage-2")
-    ;
+    STUDENT_SUM_NUMBER_XPATH("student_sum_Number_xpath","//*[@id=\"layui-laypage-2\"]/span[1]"),
+    /**上传学生页面，关闭按钮*/
+    STUDENT_UPLOAD_PAGE_CLOSE_BUTTON_XPATH("student_upload_page_clase_button_xpath","/html/body/div[1]/div/div/div/div[1]/button");
 
 
 

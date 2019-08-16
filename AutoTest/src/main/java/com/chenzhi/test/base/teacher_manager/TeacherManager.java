@@ -1,8 +1,9 @@
-package com.chenzhi.test.base.student_manager;
+package com.chenzhi.test.base.teacher_manager;
 
+import com.chenzhi.module.business.Base_StudentManagerFunction;
+import com.chenzhi.module.business.Base_TeacherManagerFunction;
 import com.chenzhi.module.business.HomeFunction;
 import com.chenzhi.module.business.LoginFunction;
-import com.chenzhi.module.business.Base_StudentManagerFunction;
 import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.domain.SystemUploadFilePath;
 import com.chenzhi.module.util.Methods;
@@ -14,7 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class StudentsManager {
+public class TeacherManager {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
 
@@ -42,31 +43,28 @@ public class StudentsManager {
 
         Thread.sleep(5000);
 
-        chromeDriver.close();
+       // chromeDriver.close();
     }
 
 
     /**
-     * 上传功能测试用例【只上传一个年级】
+     * 上传老师功能测试
      * @throws Exception
      */
     @Test
-    public void uploadStudents() throws Exception{
+    public void uploadTeachers() throws Exception{
 
-        String filePath = SystemUploadFilePath.STUDENT_FILE_PATH.getPath();
+        String filePath = SystemUploadFilePath.Teacher_FILE_PATH.getPath();
 
-        int excelNumber = ReadExcel.getExcelRows(filePath,"学生详情")-1;
+        int excelNumber = ReadExcel.getExcelRows(filePath,"教师详情")-1;
 
-        /**进入学生管理页面*/
-        HomeFunction.enterStudentManagerPage(methods);
+        /**进入教师管理页面*/
+        HomeFunction.enterTeacherManagerPage(methods);
 
         /**上传功能执行*/
-        String resultText = Base_StudentManagerFunction.uploadStudentS(methods);
+        String resultText = Base_TeacherManagerFunction.uploadStudentS(methods);
 
         /**判断执行是否成功*/
         Assert.assertEquals(resultText,"共 "+ excelNumber +" 条","Not equals: ");
-
     }
-
-
 }
