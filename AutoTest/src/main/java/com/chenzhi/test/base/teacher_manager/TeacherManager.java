@@ -1,11 +1,11 @@
 package com.chenzhi.test.base.teacher_manager;
 
-import com.chenzhi.module.business.Base_StudentManagerFunction;
-import com.chenzhi.module.business.Base_TeacherManagerFunction;
+import com.chenzhi.module.business.Base_UploadFunction;
 import com.chenzhi.module.business.HomeFunction;
 import com.chenzhi.module.business.LoginFunction;
 import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.domain.SystemUploadFilePath;
+import com.chenzhi.module.system_interface.UploadFiles;
 import com.chenzhi.module.util.Methods;
 import com.chenzhi.module.util.ReadExcel;
 import org.openqa.selenium.WebDriver;
@@ -61,8 +61,10 @@ public class TeacherManager {
         /**进入教师管理页面*/
         HomeFunction.enterTeacherManagerPage(methods);
 
+        UploadFiles uploadFiles = new Base_UploadFunction();
+
         /**上传功能执行*/
-        String resultText = Base_TeacherManagerFunction.uploadStudentS(methods);
+        String resultText = uploadFiles.uploadTeachers(methods);
 
         /**判断执行是否成功*/
         Assert.assertEquals(resultText,"共 "+ excelNumber +" 条","Not equals: ");

@@ -5,6 +5,7 @@ import com.chenzhi.module.business.PageTestFunction;
 import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.domain.PageFilePath;
 import com.chenzhi.module.util.Methods;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -26,11 +27,15 @@ public class HomePage {
 
         chromeDriver = new ChromeDriver();
 
+        Dimension dimension = new Dimension(1366, 768);
+
+        chromeDriver.manage().window().setSize(dimension);
+
         chromeDriver.get(url);
 
         methods = new Methods(chromeDriver);
 
-        LoginFunction.teacherLoginTest(methods,"13022862328","111111");
+        LoginFunction.teacherLoginTest(methods,"13022862318","111111");
 
     }
 
