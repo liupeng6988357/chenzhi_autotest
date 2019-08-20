@@ -14,20 +14,6 @@ public class HomeFunction {
         System.out.println("===========分班链接点了==============");
     }
 
-
-    /**进入高考选科任务列表页面*/
-    public static void enterSelectCourseFirstPage(Methods methods) {
-
-       // methods.getWebElement(HomePageElement.DEVIDED_CLASS_TITLE_LINK.getKey(),HomePageElement.DEVIDED_CLASS_TITLE_LINK.getPath()).click();
-
-    }
-
-    /**进入校内选课任务列表页面*/
-    public static void enterSelectCourseSecondPage(Methods methods) {
-
-        // methods.getWebElement(HomePageElement.DEVIDED_CLASS_TITLE_LINK.getKey(),HomePageElement.DEVIDED_CLASS_TITLE_LINK.getPath()).click();
-
-    }
     /**进入基础信息_学生管理页面*/
     public static void enterStudentManagerPage(Methods methods) throws Exception{
 
@@ -48,4 +34,38 @@ public class HomeFunction {
 
         Thread.sleep(30000);
     }
+
+    /**进入基础信息_成绩管理页面*/
+    public static void enterGradeManagerPage(Methods methods) throws Exception{
+
+        SystemPageFunction.touchElement(methods,HomePageElement.BASE_INFORMATION_XPATH.getKey(),HomePageElement.BASE_INFORMATION_XPATH.getPath());
+
+        methods.getWebElement(HomePageElement.BASE_INFORMATION_GRADE_XPATH.getKey(),HomePageElement.BASE_INFORMATION_GRADE_XPATH.getPath()).click();
+
+        Thread.sleep(30000);
+    }
+
+    /**进入基础信息_教室管理页面*/
+    public static void enterClassAddressManagerPage(Methods methods) throws Exception{
+
+        SystemPageFunction.touchElement(methods,HomePageElement.BASE_INFORMATION_XPATH.getKey(),HomePageElement.BASE_INFORMATION_XPATH.getPath());
+
+        methods.getWebElement(HomePageElement.BASE_INFORMATION_CLASSADDRESS_XPATH.getKey(),HomePageElement.BASE_INFORMATION_CLASSADDRESS_XPATH.getPath()).click();
+
+        Thread.sleep(30000);
+    }
+
+    /**进入基础信息_课程管理页面*/
+    public static void enterCourseManagerPage(Methods methods) throws Exception{
+
+        SystemPageFunction.touchElement(methods,HomePageElement.BASE_INFORMATION_XPATH.getKey(),HomePageElement.BASE_INFORMATION_XPATH.getPath());
+
+        methods.getWebElement(HomePageElement.BASE_INFORMATION_COURSE_XPATH.getKey(),HomePageElement.BASE_INFORMATION_COURSE_XPATH.getPath()).click();
+
+        Thread.sleep(30000);
+    }
+
+
+
+
 }

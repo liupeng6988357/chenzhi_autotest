@@ -14,7 +14,14 @@ public enum HomePageElement {
     /**基础信息_学生管理*/
     BASE_INFORMATION_STUDENT_XPATH("student_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/ul/li[4]/a"),
     /**基础信息_教师管理*/
-    BASE_INFORMATION_TEACHER_XPATH("teacher_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/ul/li[3]/a");
+    BASE_INFORMATION_TEACHER_XPATH("teacher_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/ul/li[3]/a"),
+    /**基础信息_成绩管理*/
+    BASE_INFORMATION_GRADE_XPATH("grade_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/ul/li[5]/a"),
+    /**基础信息_教室管理*/
+    BASE_INFORMATION_CLASSADDRESS_XPATH("address_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/ul/li[7]/a"),
+    /**基础信息_课程管理*/
+    BASE_INFORMATION_COURSE_XPATH("course_information_xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[5]/ul/li[2]/a")
+    ;
 
     private final String key;
     private final String path;

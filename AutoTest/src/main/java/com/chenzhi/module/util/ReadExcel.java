@@ -67,7 +67,7 @@ public class ReadExcel {
             /** jxl提供的Workbook类 */
             Workbook wb = Workbook.getWorkbook(is);
 
-            /** Excel的页签数量*/
+            /** Excel的页签*/
             Sheet sheet = wb.getSheet(sheetName);
 
             /**获取sheet行数*/

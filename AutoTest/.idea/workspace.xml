@@ -2,51 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4326a097-4a60-4269-a7a9-7235e357ff12" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/address_manager/AddressRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/grade_manager/GradeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test_file/address.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test_file/course.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/test_file/scores.xls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_StudentManagerFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_TeacherManagerFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_StudentManagerPageElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_TeacherManagerPageElement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/teacher_manager/TeacherManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/teacher_manager/TeacherManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/pagetest/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/pagetest/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/page_file/actual_page/homepage_actual.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/page_file/actual_page/homepage_actual.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/page_file/except_page/homepage_except.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/page_file/except_page/homepage_except.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/Base_StudentManagerFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/Base_TeacherManagerFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/DevideClassFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/DevideClassFunction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_UploadFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_UploadFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_ManagerElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_ManagerElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/HomePageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/HomePageElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/course_manager/CourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/course_manager/CourseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/Base_UploadFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/Base_UploadFunction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/HomeFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/HomeFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/LoginFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/LoginFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/PageTestFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/PageTestFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/SystemPageFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/SystemPageFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Base_StudentManagerPageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Base_StudentManagerPageElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Base_TeacherManagerPageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Base_TeacherManagerPageElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/DevideClassListPageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/DevideClassListPageElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Base_StudentManagerPageElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Base_TeacherManagerPageElement.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/HomePageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/HomePageElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Locator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Locator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/LoginPageElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/LoginPageElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/ModuleData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/ModuleData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/PageFilePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/PageFilePath.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/SystemUploadFilePath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/SystemUploadFilePath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/Methods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/PropertyValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/PropertyValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/ReadExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/ReadExcel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/SendMail$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/SendMail$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/SendMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/SendMail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/UploadOperate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/UploadOperate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/ExtentTestNGIReporterListener$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/ExtentTestNGIReporterListener$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/ExtentTestNGIReporterListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/ExtentTestNGIReporterListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/account/StudentLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/account/StudentLoginTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/account/TeacherLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/account/TeacherLoginTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/course_manager/CourseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/course_manager/CourseManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/student_manager/StudentsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/student_manager/StudentsManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/teacher_manager/TeacherManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/teacher_manager/TeacherManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/courseschedul/CreateTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/courseschedul/CreateTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/devideclass/Add_Delete_UpdateTaskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/devideclass/Add_Delete_UpdateTaskTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/pagetest/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/pagetest/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/CreateTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/CreateTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/page_file/actual_page/homepage_actual.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/page_file/actual_page/homepage_actual.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,76 +37,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/teacher_manager/TeacherManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_UploadFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="153">
+              <caret line="150" column="136" selection-start-line="150" selection-start-column="136" selection-end-line="150" selection-end-column="136" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#uploadTeachers#0;class#Base_UploadFunction#0" />
                 <element signature="method#uploadStudents#0;class#Base_UploadFunction#0" />
                 <element signature="method#uploadGrades#0;class#Base_UploadFunction#0" />
                 <element signature="method#uploadCourse#0;class#Base_UploadFunction#0" />
-                <element signature="method#uploadClassAddress#0;class#Base_UploadFunction#0" />
                 <element signature="method#uploadTeacherAndTime#0;class#Base_UploadFunction#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/ModuleData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/LoginPageElement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-              <folding>
-                <element signature="e#1732#1733#0" expanded="true" />
-                <element signature="e#1759#1760#0" expanded="true" />
-                <element signature="e#1789#1790#0" expanded="true" />
-                <element signature="e#1815#1816#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_ManagerElement.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/address_manager/AddressRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="31" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="31" />
+            <state relative-caret-position="281">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +68,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/system_interface/UploadFiles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/course_manager/CourseManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/grade_manager/GradeManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,8 +101,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/HomePageElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="33" />
+              <folding>
+                <element signature="e#1351#1352#0" expanded="true" />
+                <element signature="e#1378#1379#0" expanded="true" />
+                <element signature="e#1407#1408#0" expanded="true" />
+                <element signature="e#1433#1434#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,18 +117,54 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/DevideClassListPageElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="69" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="69" />
+              <caret line="6" column="69" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/DevideClassFunction.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="527">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_ManagerElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="57" column="90" lean-forward="true" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
+              <folding>
+                <element signature="e#3134#3135#0" expanded="true" />
+                <element signature="e#3161#3162#0" expanded="true" />
+                <element signature="e#3190#3191#0" expanded="true" />
+                <element signature="e#3216#3217#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#enterDevideClassPage#0;class#HomeFunction#0" />
+                <element signature="method#enterStudentManagerPage#0;class#HomeFunction#0" />
+                <element signature="method#enterTeacherManagerPage#0;class#HomeFunction#0" />
+                <element signature="method#enterGradeManagerPage#0;class#HomeFunction#0" />
+                <element signature="method#enterClassAddressManagerPage#0;class#HomeFunction#0" />
+                <element signature="method#enterCourseManagerPage#0;class#HomeFunction#0" />
               </folding>
             </state>
           </provider>
@@ -212,7 +207,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/BaseStudentManagerPageElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/StudentManagerFunction.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/PropertyValue.java" />
         <option value="$PROJECT_DIR$/src/main/resources/filepath.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/UploadOperate.java" />
@@ -221,11 +215,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SystemPageFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemElementPath.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/TeacherManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/HomePageElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_TeacherManagerPageElement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/course_manager/CourseManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/PageFilePath.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/PageTestFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/pagetest/HomePage.java" />
@@ -236,7 +226,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/teacher_manager/TeacherManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/system_interface/UploadFiles.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Bas_ManagerElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/grade_manager/GradeManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/HomePageElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/course_manager/CourseManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/address_manager/AddressRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_UploadFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_ManagerElement.java" />
       </list>
     </option>
   </component>
@@ -248,7 +246,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1383" />
+    <option name="x" value="1348" />
+    <option name="y" value="4" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
@@ -258,6 +257,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,92 +269,35 @@
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/page_file/except_page" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/test_file" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\page_file\except_page" />
-      <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\page_file" />
-      <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\test_file" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\page_file\actual_page" />
       <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\page_file" />
       <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\page_file\except_page" />
       <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\test_file" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\test_file" />
+      <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\page_file\except_page" />
+      <recent name="D:\chenzhi_autotest\AutoTest\src\main\resources\page_file" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -368,17 +312,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.StudentsManager.uploadStudents">
-    <configuration name="HomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.AddressRoom.uploadAddress">
+    <configuration name="AddressRoom.uploadAddress" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutoTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.pagetest.*" />
+          <option name="PATTERN" value="com.chenzhi.test.base.address_manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.chenzhi.test.pagetest" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.pagetest.HomePage" />
+      <option name="PACKAGE_NAME" value="com.chenzhi.test.base.address_manager" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.address_manager.AddressRoom" />
+      <option name="METHOD_NAME" value="uploadAddress" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseManager.uploadCourse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenzhi.test.base.course_manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenzhi.test.base.course_manager" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.course_manager.CourseManager" />
+      <option name="METHOD_NAME" value="uploadCourse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GradeManager" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenzhi.test.base.grade_manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenzhi.test.base.grade_manager" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.grade_manager.GradeManager" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -386,17 +366,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePage.testImageComparison" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GradeManager.uploadScore (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutoTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.pagetest.*" />
+          <option name="PATTERN" value="com.chenzhi.test.base.grade_manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.chenzhi.test.pagetest" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.pagetest.HomePage" />
-      <option name="METHOD_NAME" value="testImageComparison" />
+      <option name="PACKAGE_NAME" value="com.chenzhi.test.base.grade_manager" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.grade_manager.GradeManager" />
+      <option name="METHOD_NAME" value="uploadScore" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GradeManager.uploadScore" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenzhi.test.base.grade_manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenzhi.test.base.grade_manager" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.grade_manager.GradeManager" />
+      <option name="METHOD_NAME" value="uploadScore" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -433,60 +431,6 @@
       <option name="PACKAGE_NAME" value="com.chenzhi.test.base.student_manager" />
       <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.student_manager.StudentsManager" />
       <option name="METHOD_NAME" value="uploadStudents" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentsManager.uploadStudents" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutoTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.base.teacher_manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenzhi.test.base.student_manager" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.student_manager.StudentsManager" />
-      <option name="METHOD_NAME" value="uploadStudents" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeacherLoginTest.tea_LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutoTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.account.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenzhi.test.account" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.account.TeacherLoginTest" />
-      <option name="METHOD_NAME" value="tea_LoginTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeacherManager.uploadTeachers" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutoTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.base.teacher_manager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenzhi.test.base.teacher_manager" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.base.teacher_manager.TeacherManager" />
-      <option name="METHOD_NAME" value="uploadTeachers" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -496,11 +440,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.StudentsManager.uploadStudents" />
-        <item itemvalue="TestNG.HomePage.testImageComparison" />
-        <item itemvalue="TestNG.HomePage" />
-        <item itemvalue="TestNG.TeacherManager.uploadTeachers" />
-        <item itemvalue="TestNG.TeacherLoginTest.tea_LoginTest" />
+        <item itemvalue="TestNG.AddressRoom.uploadAddress" />
+        <item itemvalue="TestNG.CourseManager.uploadCourse" />
+        <item itemvalue="TestNG.GradeManager.uploadScore" />
+        <item itemvalue="TestNG.GradeManager.uploadScore (2)" />
+        <item itemvalue="TestNG.GradeManager" />
       </list>
     </recent_temporary>
   </component>
@@ -564,46 +508,52 @@
       <option name="project" value="LOCAL" />
       <updated>1566193898641</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="整合系统上传功能的代码结构">
+      <created>1566209264512</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1566209264512</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 24m 09s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="GradeManager_uploadScore - 2019.08.20 at 10h 57m 23s.xml">
+      <configuration name="GradeManager.uploadScore" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 25m 36s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="GradeManager_uploadScore - 2019.08.20 at 11h 14m 40s.xml">
+      <configuration name="GradeManager.uploadScore" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 32m 14s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="GradeManager_uploadScore - 2019.08.20 at 11h 19m 37s.xml">
+      <configuration name="GradeManager.uploadScore" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 33m 20s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="GradeManager_uploadScore - 2019.08.20 at 11h 22m 43s.xml">
+      <configuration name="GradeManager.uploadScore" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 34m 19s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="GradeManager_uploadScore - 2019.08.20 at 11h 40m 10s.xml">
+      <configuration name="GradeManager.uploadScore" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 36m 26s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="GradeManager_uploadScore_(2) - 2019.08.20 at 11h 45m 41s.xml">
+      <configuration name="GradeManager.uploadScore (2)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 42m 41s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="GradeManager_uploadScore - 2019.08.20 at 11h 55m 09s.xml">
+      <configuration name="GradeManager.uploadScore" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 45m 59s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="CourseManager_uploadCourse - 2019.08.20 at 13h 59m 32s.xml">
+      <configuration name="CourseManager.uploadCourse" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="HomePage_testImageComparison - 2019.08.19 at 15h 46m 46s.xml">
-      <configuration name="HomePage.testImageComparison" configurationId="TestNG" />
+    <history-entry file="AddressRoom_uploadAddress - 2019.08.20 at 14h 45m 49s.xml">
+      <configuration name="AddressRoom.uploadAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="StudentsManager_uploadStudents - 2019.08.19 at 17h 58m 21s.xml">
-      <configuration name="StudentsManager.uploadStudents" configurationId="TestNG" />
+    <history-entry file="AddressRoom_uploadAddress - 2019.08.20 at 14h 52m 04s.xml">
+      <configuration name="AddressRoom.uploadAddress" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24386339" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24653149" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -615,7 +565,7 @@
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.4051724" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.27155173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34698275" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -683,7 +633,8 @@
     <MESSAGE value="上传测试公共类方法设计" />
     <MESSAGE value="学生管理和老师管理上传测试用例设计" />
     <MESSAGE value="页面内容显示测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="页面内容显示测试用例" />
+    <MESSAGE value="整合系统上传功能的代码结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合系统上传功能的代码结构" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -704,38 +655,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/By.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#6182#6183#0" expanded="true" />
-            <element signature="e#6244#6245#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/TestNG.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="903" selection-start-line="903" selection-end-line="903" />
-          <folding>
-            <element signature="e#32662#32663#0" expanded="true" />
-            <element signature="e#32708#32709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#2034#2035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -826,19 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Locator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.53.1/selenium-remote-driver-2.53.1.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2040">
@@ -853,53 +759,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/page_file/HomeExceptPage.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="5" selection-start-line="4" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/course_manager/CourseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="453" selection-start-line="453" selection-end-line="453" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SystemPageFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/page_file/HomeExceptPage.png" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/UploadOperate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -917,35 +777,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/PropertyValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="61" column="28" selection-start-line="61" selection-start-column="28" selection-end-line="61" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/LoginFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#studentLoginTest#0;class#LoginFunction#0" />
-            <element signature="method#studentIDLoginExcute#0;class#LoginFunction#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/Methods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
@@ -1010,87 +841,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_StudentManagerFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/DevideClassFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/teacher_manager/TeacherManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/system_interface/UploadFiles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_StudentManagerPageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_TeacherManagerPageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="96" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="12" selection-end-column="96" />
-          <folding>
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_UploadFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#uploadTeachers#0;class#Base_UploadFunction#0" />
-            <element signature="method#uploadStudents#0;class#Base_UploadFunction#0" />
-            <element signature="method#uploadGrades#0;class#Base_UploadFunction#0" />
-            <element signature="method#uploadCourse#0;class#Base_UploadFunction#0" />
-            <element signature="method#uploadClassAddress#0;class#Base_UploadFunction#0" />
-            <element signature="method#uploadTeacherAndTime#0;class#Base_UploadFunction#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_StudentManagerFunction.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_StudentManagerPageElement.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_TeacherManagerPageElement.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/ModuleData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1111,24 +864,224 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SystemPageFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/DevideClassFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="71" column="5" selection-start-line="19" selection-start-column="4" selection-end-line="71" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/TestResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+          <folding>
+            <element signature="e#3041#3042#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/RegexpExpectedExceptionsHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/teacher_manager/TeacherManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Locator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/Methods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/Invoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="849" selection-start-line="849" selection-end-line="849" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/LoginFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#studentLoginTest#0;class#LoginFunction#0" />
+            <element signature="method#studentIDLoginExcute#0;class#LoginFunction#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#enterDevideClassPage#0;class#HomeFunction#0" />
+            <element signature="method#enterStudentManagerPage#0;class#HomeFunction#0" />
+            <element signature="method#enterTeacherManagerPage#0;class#HomeFunction#0" />
+            <element signature="method#enterGradeManagerPage#0;class#HomeFunction#0" />
+            <element signature="method#enterClassAddressManagerPage#0;class#HomeFunction#0" />
+            <element signature="method#enterCourseManagerPage#0;class#HomeFunction#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/HomePageElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#1351#1352#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/DevideClassListPageElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="69" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="69" />
+          <caret line="6" column="69" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/Base_UploadFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="150" column="136" selection-start-line="150" selection-start-column="136" selection-end-line="150" selection-end-column="136" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#uploadTeachers#0;class#Base_UploadFunction#0" />
+            <element signature="method#uploadStudents#0;class#Base_UploadFunction#0" />
+            <element signature="method#uploadGrades#0;class#Base_UploadFunction#0" />
+            <element signature="method#uploadCourse#0;class#Base_UploadFunction#0" />
+            <element signature="method#uploadTeacherAndTime#0;class#Base_UploadFunction#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_ManagerElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="31" />
+        <state relative-caret-position="969">
+          <caret line="57" column="90" lean-forward="true" selection-start-line="57" selection-start-column="90" selection-end-line="57" selection-end-column="90" />
+          <folding>
+            <element signature="e#3134#3135#0" expanded="true" />
+            <element signature="e#3161#3162#0" expanded="true" />
+            <element signature="e#3190#3191#0" expanded="true" />
+            <element signature="e#3216#3217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/course_manager/CourseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/grade_manager/GradeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="58" column="16" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/system_interface/UploadFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/address_manager/AddressRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

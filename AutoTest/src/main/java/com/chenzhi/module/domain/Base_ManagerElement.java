@@ -5,6 +5,9 @@ public enum Base_ManagerElement {
 
     /**上传文件按钮*/
     UPLOAD_FILE_XPATH("upload_file_xpath","/html/body/div[1]/div/div/div/div[2]/form/div/div[3]/button"),
+    /**弹框关闭按钮*/
+    UPLOAD_PAGE_CLOSE_BUTTON_XPATH("teacher_upload_page_clase_button_xpath","/html/body/div[1]/div/div/div/div[1]/button"),
+
 
 
     /**上传学生详情按钮*/
@@ -19,12 +22,41 @@ public enum Base_ManagerElement {
 
     /**上传老师按钮*/
     UPLOAD_TEACHER_INFORMATION_XPATH("upload_teacher_information_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[1]/div/button[5]"),
-    /**上传学生页面，关闭按钮*/
-    TEACHER_UPLOAD_PAGE_CLOSE_BUTTON_XPATH("teacher_upload_page_clase_button_xpath","/html/body/div[1]/div/div/div/div[1]/button"),
     /**老师总人数*/
-    TEACHER_SUM_NUMBER_XPATH("teacher_sum_Number_xpath","//*[@id=\"layui-laypage-1\"]/span[1]");
+    TEACHER_SUM_NUMBER_XPATH("teacher_sum_Number_xpath","//*[@id=\"layui-laypage-1\"]/span[1]"),
 
 
+    /**进入上传成绩页面按钮*/
+    UPLOAD_GRADE_INFORMATION_XPATH("upload_grade_information_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[2]/div/div/button[3]"),
+    /**选择年级下拉框Select*/
+    SELECT_GRADE_XPATH("select_grade_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[3]/div/div/div[2]/div[1]/div[2]/select"),
+    /**选择学年下拉框Select*/
+    SELECT_STUDY_YEAR_XPATH("select_study_year_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[3]/div/div/div[2]/div[2]/div[1]/div[2]/select"),
+    /**考试名称输入框input*/
+    TESTNAME_INPUT_XPATH("testname_input_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[3]/div/div/div[2]/div[2]/div[2]/div[2]/input"),
+    /**选择文件按钮*/
+    SELECT_FILE_BUTTON_XPATH("select_file_button_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[3]/div/div/div[2]/div[2]/div[3]/div[2]/button"),
+    /**上传成绩按钮Button*/
+    UPLOAD_GRADE_fILE_XPATH("upload_grade_information_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[3]/div/div/div[2]/div[3]/button"),
+    /**保存按钮Button*/
+    PROTECT_BUTTON_XPATH("protect_button_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[3]/div/div/div[2]/div[5]/button[2]"),
+    /**查看详情link*/
+    SCOREDETAI_LINK_XPATH("scoredetail_link_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[2]/table/tbody/tr[1]/td[6]"),
+
+    /**分数总纪录数*/
+    SCORE_SUM_NUMBER_XPATH("score_sum_number_xpath","//*[@id=\"layui-laypage-6\"]/span[1]"),
+
+
+
+    /**上传课程按钮Button*/
+    UPLOAD_COURSE_INFORMATION_XPATH("upload_course_information_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[2]/div/button[4]"),
+
+
+    /**上传教室按钮 Button*/
+    ADDRESS_UPLOAD_INFORMATION_XPATH("address_upload_information_xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div[1]/div/button[5]"),
+    /**教室总记录数*/
+    ADDRESS_SUM_NUMBER_XPATH("address_sum_number_xpath","//*[@id=\"layui-laypage-1\"]/span")
+    ;
 
 
 

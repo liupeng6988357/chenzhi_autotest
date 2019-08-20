@@ -1,4 +1,4 @@
-package com.chenzhi.test.base.course_manager;
+package com.chenzhi.test.base.grade_manager;
 
 import com.chenzhi.module.business.Base_UploadFunction;
 import com.chenzhi.module.business.HomeFunction;
@@ -15,7 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CourseManager {
+public class GradeManager {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
 
@@ -46,24 +46,25 @@ public class CourseManager {
         chromeDriver.close();
     }
 
+
     /**
      * 上传功能测试用例【只上传一个年级】
      * @throws Exception
      */
     @Test
-    public void uploadCourse() throws Exception{
+    public void uploadScore() throws Exception{
 
-        String filePath = SystemUploadFilePath.COURSE_FILE_PATH.getPath();
+        String filePath = SystemUploadFilePath.SCORE_FILE_PATH.getPath();
 
-        int excelNumber = ReadExcel.getExcelRows(filePath,"课程详情")-1;
+        int excelNumber = ReadExcel.getExcelRows(filePath,"高一")-1;
 
-        /**进入课程管理页面*/
-        HomeFunction.enterCourseManagerPage(methods);
+        /**进入成绩管理页面*/
+        HomeFunction.enterGradeManagerPage(methods);
 
         UploadFiles uploadFiles = new Base_UploadFunction();
 
         /**上传功能执行*/
-        String resultText = uploadFiles.uploadCourse(methods);
+        String resultText = uploadFiles.uploadGrades(methods);
 
         /**判断执行是否成功*/
         Assert.assertEquals(resultText,excelNumber +"人","Not equals: ");

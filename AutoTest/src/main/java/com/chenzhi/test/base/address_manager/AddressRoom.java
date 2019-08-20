@@ -1,4 +1,4 @@
-package com.chenzhi.test.base.course_manager;
+package com.chenzhi.test.base.address_manager;
 
 import com.chenzhi.module.business.Base_UploadFunction;
 import com.chenzhi.module.business.HomeFunction;
@@ -15,7 +15,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CourseManager {
+public class AddressRoom {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
 
@@ -51,22 +51,24 @@ public class CourseManager {
      * @throws Exception
      */
     @Test
-    public void uploadCourse() throws Exception{
+    public void uploadAddress() throws Exception{
 
-        String filePath = SystemUploadFilePath.COURSE_FILE_PATH.getPath();
+        String filePath = SystemUploadFilePath.ADDRESS_FILR_PATH.getPath();
 
-        int excelNumber = ReadExcel.getExcelRows(filePath,"课程详情")-1;
+        int excelNumber = ReadExcel.getExcelRows(filePath,"教室详情")-1;
 
-        /**进入课程管理页面*/
-        HomeFunction.enterCourseManagerPage(methods);
+        /**进入教室管理页面*/
+        HomeFunction.enterClassAddressManagerPage(methods);
 
         UploadFiles uploadFiles = new Base_UploadFunction();
 
         /**上传功能执行*/
-        String resultText = uploadFiles.uploadCourse(methods);
+        String resultText = uploadFiles.uploadClassAddress(methods);
 
         /**判断执行是否成功*/
         Assert.assertEquals(resultText,excelNumber +"人","Not equals: ");
 
     }
+
+
 }
