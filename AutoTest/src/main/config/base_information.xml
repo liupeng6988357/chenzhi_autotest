@@ -4,12 +4,27 @@
 <suite name="基础信息模块">
     <test name="学生模块">
         <classes >
-            <class name="com.chenzhi.auto_test.base_information.student.AddStudent" ></class>
+            <class name="com.chenzhi.test.base.student_manager.StudentsManager" ></class>
         </classes>
     </test>
     <test name="教师模块">
         <classes>
-            <class name="com.chenzhi.auto_test.base_information.teacher.AddTeacher"></class>
+            <class name="com.chenzhi.test.base.teacher_manager.TeacherManager"></class>
+        </classes>
+    </test>
+    <test name="教室模块">
+        <classes>
+            <class name="com.chenzhi.test.base.address_manager.AddressRoom"></class>
+        </classes>
+    </test>
+    <test name="课程模块">
+        <classes>
+            <class name="com.chenzhi.test.base.course_manager.CourseManager"></class>
+        </classes>
+    </test>
+    <test name="成绩模块">
+        <classes>
+            <class name="com.chenzhi.test.base.grade_manager.GradeManager"></class>
         </classes>
     </test>
 </suite>

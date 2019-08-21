@@ -41,7 +41,7 @@ public class Base_UploadFunction implements UploadFiles {
 
         methods.getWebElement(Base_ManagerElement.UPLOAD_STUDENT_INFORMATION_XPATH.getKey(), Base_ManagerElement.UPLOAD_STUDENT_INFORMATION_XPATH.getPath()).click();
 
-        methods.getWebElement(Base_ManagerElement.UPLOAD_FILE_XPATH.getKey(), Base_ManagerElement.UPLOAD_FILE_XPATH.getPath()).click();
+        methods.getWebElement(Base_ManagerElement.UPLOAD_STUDENT_FILE_XPATH.getKey(), Base_ManagerElement.UPLOAD_STUDENT_FILE_XPATH.getPath()).click();
 
         /**附件上传执行脚本*/
         UploadOperate.uploadFile(SystemUploadFilePath.UPLOAD_FILE_SCRIPT_PATH.getPath(),"chrome",SystemUploadFilePath.STUDENT_FILE_PATH.getPath());
@@ -80,7 +80,7 @@ public class Base_UploadFunction implements UploadFiles {
 
         yearSelect.selectByVisibleText("2019-2020");
 
-        methods.getWebElement(Base_ManagerElement.TESTNAME_INPUT_XPATH.getKey(),Base_ManagerElement.TESTNAME_INPUT_XPATH.getPath()).sendKeys("224ppp5dsfds4567");
+        methods.getWebElement(Base_ManagerElement.TESTNAME_INPUT_XPATH.getKey(),Base_ManagerElement.TESTNAME_INPUT_XPATH.getPath()).sendKeys("123456");
 
         methods.getWebElement(Base_ManagerElement.SELECT_FILE_BUTTON_XPATH.getKey(),Base_ManagerElement.SELECT_FILE_BUTTON_XPATH.getPath()).click();
 
