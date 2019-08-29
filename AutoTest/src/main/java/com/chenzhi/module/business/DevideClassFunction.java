@@ -39,6 +39,7 @@ public class DevideClassFunction {
         /**点击确定按钮*/
         methods.getWebElement(DevideClassListPageElement.DETERMINE_BUTTON_XPATH.getKey(),DevideClassListPageElement.DETERMINE_BUTTON_XPATH.getPath()).click();
 
+
     }
 
 }
