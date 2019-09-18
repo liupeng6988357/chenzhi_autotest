@@ -50,7 +50,7 @@ public class CourseManager {
      * 上传功能测试用例【只上传一个年级】
      * @throws Exception
      */
-    @Test
+    @Test(invocationCount = 5)
     public void uploadCourse() throws Exception{
 
         String filePath = SystemUploadFilePath.COURSE_FILE_PATH.getPath();

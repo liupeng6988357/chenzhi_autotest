@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="基础信息模块">
-    <test name="学生模块">
+<suite name="基础信息" parallel="tests" thread-count="5" verbose="2">
+    <test name="学生管理">
         <classes >
             <class name="com.chenzhi.test.base.student_manager.StudentsManager" ></class>
         </classes>
     </test>
-    <test name="教师模块">
+    <test name="教师管理">
         <classes>
             <class name="com.chenzhi.test.base.teacher_manager.TeacherManager"></class>
         </classes>
     </test>
-    <test name="教室模块">
+    <test name="教室管理">
         <classes>
             <class name="com.chenzhi.test.base.address_manager.AddressRoom"></class>
         </classes>
     </test>
-    <test name="课程模块">
+    <test name="课程管理">
         <classes>
             <class name="com.chenzhi.test.base.course_manager.CourseManager"></class>
         </classes>
     </test>
-    <test name="成绩模块">
+    <test name="成绩管理">
         <classes>
             <class name="com.chenzhi.test.base.grade_manager.GradeManager"></class>
         </classes>

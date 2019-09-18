@@ -25,7 +25,7 @@ public class StudentsManager {
 
 
     @BeforeMethod
-    public void beforeTest(){
+    public void beforeTest() throws Exception{
 
         chromeDriver = new ChromeDriver();
 

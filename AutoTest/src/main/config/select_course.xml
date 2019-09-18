@@ -4,7 +4,7 @@
 <suite name="选科模块">
     <test name="创建选科任务">
         <classes>
-            <class name="com.chenzhi.test.selectcourse.CreateTask" ></class>
+            <class name="com.chenzhi.test.selectcourse.SelectTestCourseTask" ></class>
         </classes>
     </test>
 </suite>

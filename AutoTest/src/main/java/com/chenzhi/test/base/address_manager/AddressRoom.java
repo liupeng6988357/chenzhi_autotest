@@ -25,7 +25,7 @@ public class AddressRoom {
 
 
     @BeforeMethod
-    public void beforeTest(){
+    public void beforeTest() {
 
         chromeDriver = new ChromeDriver();
 
@@ -33,7 +33,7 @@ public class AddressRoom {
 
         methods = new Methods(chromeDriver);
 
-        LoginFunction.teacherLoginTest(methods,"17088263562","111111");
+        LoginFunction.teacherLoginTest(methods,"13772940987","111111");
 
     }
 
@@ -50,7 +50,7 @@ public class AddressRoom {
      * 上传功能测试用例【只上传一个年级】
      * @throws Exception
      */
-    @Test
+    @Test(invocationCount = 5)
     public void uploadAddress() throws Exception{
 
         String filePath = SystemUploadFilePath.ADDRESS_FILR_PATH.getPath();

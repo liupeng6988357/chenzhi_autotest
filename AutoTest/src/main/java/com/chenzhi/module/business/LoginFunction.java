@@ -13,9 +13,15 @@ import java.util.Map;
 public class LoginFunction {
 
     /**老师登录操作执行*/
-    public static void teacherLoginTest(Methods methods, String userName, String password) {
+    public static void teacherLoginTest(Methods methods, String userName, String password){
 
         methods.getWebElement(LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getPath()).click();
+
+        try{
+            Thread.sleep(5000);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         methods.getWebElement(LoginPageElement.USERNAME_INPUT_XPATH.getKey(),LoginPageElement.USERNAME_INPUT_XPATH.getPath()).sendKeys(userName);
 
