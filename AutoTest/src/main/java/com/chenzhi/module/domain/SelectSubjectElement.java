@@ -50,6 +50,23 @@ public enum SelectSubjectElement {
 
     /**导出学生列表按钮*/
     UPLOAD_STUDENT_LIST_PATH("xpath","//*[@id=\"createSelectTask\"]/div[2]/div[1]/button"),
+
+    /**微信端管理选课链接*/
+    WECHAT_BUTTON_PATH("xpath","//*[@id=\"createSelectTask\"]/h2/span[1]"),
+    /**快速录入班主任信息链接按钮*/
+    CLASS_TEACHER_PATH("xpath","//*[@id=\"wechatGuide\"]/div/div[1]/div[2]/p[2]/span"),
+
+    /**下载班主任模板按钮*/
+    CLASS_TEACHER_UPLOAD_PATH("xpath","//*[@id=\"wechatGuide\"]/div/div[2]/div[2]/div[2]/form/div/div[2]/span"),
+
+    /**应用选课数据按钮*/
+    USE_SELECT_COURSE_PATH("xpath","//*[@id=\"createSelectTask\"]/h2/span[2]"),
+
+    /**选课确定按钮*/
+    SELECT_COURSE_BUTTON_PATH("xpath","//*[@id=\"popup\"]/div/div[2]/div[1]/div[3]/div[1]"),
+
+    /**选课应用成功文本*/
+    USE_COURSE_SUCCESS_TXT_PATH("xpath","//*[@id=\"popup\"]/div/div[2]/div[2]/div[1]/p")
     ;
 
     private final String key;

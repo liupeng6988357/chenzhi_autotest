@@ -20,7 +20,7 @@
 <!--        <suite-file path="../config/course_schedul.xml"></suite-file>-->
 
 
-<!--        &lt;!&ndash; 选科模块 &ndash;&gt;-->
+        <!-- 选科模块 -->
         <suite-file path="../config/select_course.xml"></suite-file>
 
         <!--基础信息模块-->

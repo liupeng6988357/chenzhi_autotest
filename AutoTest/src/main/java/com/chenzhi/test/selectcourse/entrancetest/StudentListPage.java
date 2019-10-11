@@ -1,4 +1,4 @@
-package com.chenzhi.test.selectcourse;
+package com.chenzhi.test.selectcourse.entrancetest;
 
 import com.chenzhi.module.business.HomeFunction;
 import com.chenzhi.module.business.LoginFunction;
@@ -6,7 +6,6 @@ import com.chenzhi.module.business.SelectSubjectFunction;
 import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.domain.SelectSubjectElement;
 import com.chenzhi.module.util.Methods;
-import com.chenzhi.module.util.ReadExcel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +16,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 public class StudentListPage {
@@ -107,25 +105,26 @@ public class StudentListPage {
     @Test
     public void uploadStudentsList() throws Exception {
 
-        Thread.sleep(5000);
-
-        methods.getWebElement(SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getKey(),SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getPath()).click();
-
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");//设置日期格式
-        String time = df.format(new Date());
-        String timeName = time.replace(":","").replace(" ","").replace("-","");
-
-        Thread.sleep(5000);
-        int rows = ReadExcel.getExcelRows("C:\\Users\\EDZ\\Downloads\\"+timeName+".xls","学生选课详情");
-
-        System.out.println(rows);
+        SelectSubjectFunction.uploadStudentsList(methods);
     }
 
     /**学生列表：下载班主任模板测试*/
     @Test
     public void uploadClassTeacher() throws Exception {
 
+        SelectSubjectFunction.uploadClassTeacher(methods);
     }
+
+
+    /**应用数据功能测试,需要和基础信息进行对比*/
+    @Test
+    public void useDataTest() throws Exception{
+
+        String result  = SelectSubjectFunction.useDataTest(methods);
+
+        Assert.assertEquals(result,"成功应用本次选课","Not equals: ");
+    }
+
 
 
 }

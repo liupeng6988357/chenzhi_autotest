@@ -2,33 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4326a097-4a60-4269-a7a9-7235e357ff12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectCourseFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ExcelWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/StudentListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/system.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/SelectCourseFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/ExcelWrite.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/StudentListPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/system.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/schoolselect/SelectCourseSchoolTaskList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/schoolselect/StudentListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/SelectCourseTaskList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/config/select_course.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/config/select_course.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectSubjectFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectSubjectFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Locator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Locator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SelectSubjectElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SelectSubjectElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/Methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/Methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/PropertyValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/PropertyValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectTestCourseTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectTestCourseTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectTestCourseTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/entrancetest/SelectCourseTaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/StudentListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/entrancetest/StudentListPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/SelectSubjectFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/business/SelectSubjectFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Locator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/Locator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/SelectSubjectElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/domain/SelectSubjectElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/Methods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/PropertyValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/PropertyValue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/ReadExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/module/util/ReadExcel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/student_manager/StudentsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/base/student_manager/StudentsManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/SelectTestCourseTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/SelectTestCourseTask.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/SelectTestCourseTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/StudentListPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/chenzhi/test/selectcourse/StudentListPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testreport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testreport.html" afterDir="false" />
     </list>
@@ -49,24 +36,83 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectTestCourseTask.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/entrancetest/SelectCourseTaskList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="68" column="65" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="65" />
+            <state relative-caret-position="326">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#beforeTest#0;class#SelectTestCourseTask#0" />
+                <element signature="method#afterTest#0;class#SelectTestCourseTask#0" />
+                <element signature="docComment;method#createTask#0;class#SelectTestCourseTask#0" />
+                <element signature="method#createTask#0;class#SelectTestCourseTask#0" />
+                <element signature="docComment;method#updateTask#0;class#SelectTestCourseTask#0" />
+                <element signature="method#updateTask#0;class#SelectTestCourseTask#0" />
+                <element signature="docComment;method#deleteTask#0;class#SelectTestCourseTask#0" />
+                <element signature="method#deleteTask#0;class#SelectTestCourseTask#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/StudentListPage.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/schoolselect/SelectCourseSchoolTaskList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+            <state relative-caret-position="34">
+              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/schoolselect/StudentListPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test-output/testreport.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3417" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/config/select_course.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/entrancetest/StudentListPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#beforeTest#0;class#StudentListPage#0" />
+                <element signature="method#afterTest#0;class#StudentListPage#0" />
+                <element signature="docComment;method#createTask#0;class#StudentListPage#0" />
+                <element signature="method#createTask#0;class#StudentListPage#0" />
+                <element signature="method#checkStudentList#0;class#StudentListPage#0" />
+                <element signature="method#uploadStudentsList#0;class#StudentListPage#0" />
+                <element signature="method#uploadClassTeacher#0;class#StudentListPage#0" />
+                <element signature="method#useDataTest#0;class#StudentListPage#0" />
               </folding>
             </state>
           </provider>
@@ -85,36 +131,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/account/StudentLoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="158" column="45" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="45" />
-              <folding>
-                <element signature="method#student_LoginPhoneTest#0;class#StudentLoginTest#0" />
-                <element signature="method#student_LoginPhoneExceptionTest#0;class#StudentLoginTest#0" />
-                <element signature="method#student_LoginWorkIDTest#0;class#StudentLoginTest#0" />
-                <element signature="method#provinceValuesTest#0;class#StudentLoginTest#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SelectSubjectElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="51" column="28" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/address_manager/AddressRoom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+            <state relative-caret-position="340">
+              <caret line="68" column="31" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2897#2898#0" expanded="true" />
+                <element signature="e#2924#2925#0" expanded="true" />
+                <element signature="e#2953#2954#0" expanded="true" />
+                <element signature="e#2979#2980#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,44 +148,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectSubjectFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="171" column="90" selection-start-line="171" selection-start-column="90" selection-end-line="171" selection-end-column="90" />
+            <state relative-caret-position="261">
+              <caret line="350" column="26" selection-start-line="350" selection-start-column="26" selection-end-line="350" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#createTask#0;class#SelectSubjectFunction#0" />
+                <element signature="docComment;method#deleteTask#0;class#SelectSubjectFunction#0" />
+                <element signature="method#deleteTask#0;class#SelectSubjectFunction#0" />
+                <element signature="docComment;method#updateTask#0;class#SelectSubjectFunction#0" />
+                <element signature="method#updateTask#0;class#SelectSubjectFunction#0" />
+                <element signature="method#updateOperate#0;class#SelectSubjectFunction#0" />
+                <element signature="method#deleteOperate#0;class#SelectSubjectFunction#0" />
+                <element signature="docComment;method#searchStudentsTest#0;class#SelectSubjectFunction#0" />
+                <element signature="method#searchStudentsTest#0;class#SelectSubjectFunction#0" />
+                <element signature="method#checkLogic#0;class#SelectSubjectFunction#0" />
+                <element signature="method#uploadStudentsList#0;class#SelectSubjectFunction#0" />
+                <element signature="method#uploadClassTeacher#0;class#SelectSubjectFunction#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/devideclass/Add_Delete_UpdateTaskTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/pagetest/HomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectCourseFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -188,8 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/UploadOperate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Base_StudentManagerPageElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SystemPageFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemElementPath.java" />
@@ -223,8 +225,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/HomeFunction.java" />
         <option value="$PROJECT_DIR$/src/test/java/TimeTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/RandomString.java" />
-        <option value="$PROJECT_DIR$/src/main/config/select_course.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/OperateExcel.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/WriteExcel.java" />
@@ -232,13 +232,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/base/student_manager/StudentsManager.java" />
         <option value="$PROJECT_DIR$/src/main/resources/system.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/PropertyValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectTestCourseTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/Locator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectCourseFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectSubjectFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectTestCourseTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectCourseTaskList.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/config/select_course.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SelectSubjectElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectSubjectFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/StudentListPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/entrancetest/SelectCourseTaskList.java" />
       </list>
     </option>
   </component>
@@ -297,6 +301,13 @@
               <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -343,88 +354,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="system_interface" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="address_manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="devideclass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="pagetest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chenzhi" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="selectcourse" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
@@ -439,6 +369,11 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AutoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -448,7 +383,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/test_file" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -480,19 +415,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.StudentListPage.uploadStudentsList">
-    <configuration name="SelectTestCourseTask.createTask" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.StudentListPage.useDataTest">
+    <configuration name="D:/chenzhi_autotest/AutoTest/src/main/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutoTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.selectcourse.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenzhi.test.selectcourse" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.SelectTestCourseTask" />
-      <option name="METHOD_NAME" value="createTask" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -510,24 +437,6 @@
       <option name="PACKAGE_NAME" value="com.chenzhi.test.selectcourse" />
       <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.SelectTestCourseTask" />
       <option name="METHOD_NAME" value="createTask" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectTestCourseTask.deleteTask" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutoTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.selectcourse.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.chenzhi.test.selectcourse" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.SelectTestCourseTask" />
-      <option name="METHOD_NAME" value="deleteTask" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -539,12 +448,12 @@
       <module name="AutoTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.selectcourse.*" />
+          <option name="PATTERN" value="com.chenzhi.test.selectcourse.entrancetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chenzhi.test.selectcourse" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.StudentListPage" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.entrancetest.StudentListPage" />
       <option name="METHOD_NAME" value="checkStudentList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -553,17 +462,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentListPage.createTask" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentListPage.uploadClassTeacher" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutoTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.selectcourse.*" />
+          <option name="PATTERN" value="com.chenzhi.test.selectcourse.entrancetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chenzhi.test.selectcourse" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.StudentListPage" />
-      <option name="METHOD_NAME" value="createTask" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.entrancetest.StudentListPage" />
+      <option name="METHOD_NAME" value="uploadClassTeacher" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -575,13 +484,31 @@
       <module name="AutoTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.chenzhi.test.selectcourse.*" />
+          <option name="PATTERN" value="com.chenzhi.test.selectcourse.entrancetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.chenzhi.test.selectcourse" />
-      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.StudentListPage" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.entrancetest.StudentListPage" />
       <option name="METHOD_NAME" value="uploadStudentsList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentListPage.useDataTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chenzhi.test.selectcourse.entrancetest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.chenzhi.test.selectcourse" />
+      <option name="MAIN_CLASS_NAME" value="com.chenzhi.test.selectcourse.entrancetest.StudentListPage" />
+      <option name="METHOD_NAME" value="useDataTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -591,11 +518,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.StudentListPage.useDataTest" />
+        <item itemvalue="TestNG.D:/chenzhi_autotest/AutoTest/src/main/resources/testng.xml" />
+        <item itemvalue="TestNG.StudentListPage.uploadClassTeacher" />
         <item itemvalue="TestNG.StudentListPage.uploadStudentsList" />
         <item itemvalue="TestNG.StudentListPage.checkStudentList" />
-        <item itemvalue="TestNG.StudentListPage.createTask" />
-        <item itemvalue="TestNG.SelectTestCourseTask.deleteTask" />
-        <item itemvalue="TestNG.SelectTestCourseTask.createTask" />
       </list>
     </recent_temporary>
   </component>
@@ -694,22 +621,17 @@
       <option name="project" value="LOCAL" />
       <updated>1568779159683</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="选科模块--学生列表--功能测试用例设计">
+      <created>1570775941837</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1570775941837</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentListPage_uploadStudentsList - 2019.10.11 at 11h 58m 16s.xml">
-      <configuration name="StudentListPage.uploadStudentsList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StudentListPage_uploadStudentsList - 2019.10.11 at 12h 00m 23s.xml">
-      <configuration name="StudentListPage.uploadStudentsList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StudentListPage_uploadStudentsList - 2019.10.11 at 13h 38m 03s.xml">
-      <configuration name="StudentListPage.uploadStudentsList" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="StudentListPage_uploadStudentsList - 2019.10.11 at 13h 40m 25s.xml">
-      <configuration name="StudentListPage.uploadStudentsList" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="StudentListPage_uploadStudentsList - 2019.10.11 at 13h 42m 39s.xml">
       <configuration name="StudentListPage.uploadStudentsList" configurationId="TestNG" />
     </history-entry>
@@ -727,6 +649,18 @@
     </history-entry>
     <history-entry file="StudentListPage_uploadStudentsList - 2019.10.11 at 14h 24m 27s.xml">
       <configuration name="StudentListPage.uploadStudentsList" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StudentListPage_uploadClassTeacher - 2019.10.11 at 17h 10m 04s.xml">
+      <configuration name="StudentListPage.uploadClassTeacher" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="D__chenzhi_autotest_AutoTest_src_main_resources_testng_xml - 2019.10.11 at 17h 56m 56s.xml">
+      <configuration name="D:/chenzhi_autotest/AutoTest/src/main/resources/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StudentListPage_useDataTest - 2019.10.11 at 18h 32m 15s.xml">
+      <configuration name="StudentListPage.useDataTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="StudentListPage_useDataTest - 2019.10.11 at 18h 34m 03s.xml">
+      <configuration name="StudentListPage.useDataTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -827,7 +761,8 @@
     <MESSAGE value="晚上系统上传testcase" />
     <MESSAGE value="完善系统上传testcase" />
     <MESSAGE value="设计选科增删改的测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计选科增删改的测试用例" />
+    <MESSAGE value="选科模块--学生列表--功能测试用例设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="选科模块--学生列表--功能测试用例设计" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -864,36 +799,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/LoginPageElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
-            <element signature="e#1789#1790#0" expanded="true" />
-            <element signature="e#1815#1816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/ModuleData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/PageFilePath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#530#531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SystemUploadFilePath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -988,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/config/select_course.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="59" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TimeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1051,13 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -1249,33 +1140,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/SelectTestCourseTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="68" column="65" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectSubjectFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="171" column="90" selection-start-line="171" selection-start-column="90" selection-end-line="171" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SelectSubjectElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/util/ReadExcel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -1286,13 +1150,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/StudentListPage.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/testreport.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3417" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/config/select_course.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/domain/SelectSubjectElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="31" />
+          <folding>
+            <element signature="e#2897#2898#0" expanded="true" />
+            <element signature="e#2924#2925#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/module/business/SelectSubjectFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="350" column="26" selection-start-line="350" selection-start-column="26" selection-end-line="350" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#createTask#0;class#SelectSubjectFunction#0" />
+            <element signature="docComment;method#deleteTask#0;class#SelectSubjectFunction#0" />
+            <element signature="method#deleteTask#0;class#SelectSubjectFunction#0" />
+            <element signature="docComment;method#updateTask#0;class#SelectSubjectFunction#0" />
+            <element signature="method#updateTask#0;class#SelectSubjectFunction#0" />
+            <element signature="method#updateOperate#0;class#SelectSubjectFunction#0" />
+            <element signature="method#deleteOperate#0;class#SelectSubjectFunction#0" />
+            <element signature="docComment;method#searchStudentsTest#0;class#SelectSubjectFunction#0" />
+            <element signature="method#searchStudentsTest#0;class#SelectSubjectFunction#0" />
+            <element signature="method#checkLogic#0;class#SelectSubjectFunction#0" />
+            <element signature="method#uploadStudentsList#0;class#SelectSubjectFunction#0" />
+            <element signature="method#uploadClassTeacher#0;class#SelectSubjectFunction#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/entrancetest/StudentListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#beforeTest#0;class#StudentListPage#0" />
+            <element signature="method#afterTest#0;class#StudentListPage#0" />
+            <element signature="docComment;method#createTask#0;class#StudentListPage#0" />
+            <element signature="method#createTask#0;class#StudentListPage#0" />
+            <element signature="method#checkStudentList#0;class#StudentListPage#0" />
+            <element signature="method#uploadStudentsList#0;class#StudentListPage#0" />
+            <element signature="method#uploadClassTeacher#0;class#StudentListPage#0" />
+            <element signature="method#useDataTest#0;class#StudentListPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/entrancetest/SelectCourseTaskList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#beforeTest#0;class#SelectTestCourseTask#0" />
+            <element signature="method#afterTest#0;class#SelectTestCourseTask#0" />
+            <element signature="docComment;method#createTask#0;class#SelectTestCourseTask#0" />
+            <element signature="method#createTask#0;class#SelectTestCourseTask#0" />
+            <element signature="docComment;method#updateTask#0;class#SelectTestCourseTask#0" />
+            <element signature="method#updateTask#0;class#SelectTestCourseTask#0" />
+            <element signature="docComment;method#deleteTask#0;class#SelectTestCourseTask#0" />
+            <element signature="method#deleteTask#0;class#SelectTestCourseTask#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/schoolselect/SelectCourseSchoolTaskList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chenzhi/test/selectcourse/schoolselect/StudentListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>

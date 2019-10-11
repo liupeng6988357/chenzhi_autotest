@@ -3,6 +3,7 @@ package com.chenzhi.module.business;
 
 import com.chenzhi.module.domain.SelectSubjectElement;
 import com.chenzhi.module.util.Methods;
+import com.chenzhi.module.util.ReadExcel;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -303,4 +304,54 @@ public class SelectSubjectFunction {
         return null;
     }
 
+    /**下载学生列表功能*/
+    public static int uploadStudentsList(Methods methods) throws Exception {
+        Thread.sleep(5000);
+
+        methods.getWebElement(SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getKey(),SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getPath()).click();
+
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");//设置日期格式
+        String time = df.format(new Date());
+        String timeName = time.replace(":","").replace(" ","").replace("-","");
+
+        Thread.sleep(5000);
+        int rows = ReadExcel.getExcelRows("C:\\Users\\EDZ\\Downloads\\"+timeName+".xls","学生选课详情");
+
+        System.out.println(rows);
+        return rows;
+    }
+
+    /**下载老师模板操作*/
+    public static void uploadClassTeacher(Methods methods) throws Exception{
+
+        methods.getWebElement(SelectSubjectElement.WECHAT_BUTTON_PATH.getKey(),SelectSubjectElement.WECHAT_BUTTON_PATH.getPath()).click();
+
+        Thread.sleep(5000);
+
+        methods.getWebElement(SelectSubjectElement.CLASS_TEACHER_PATH.getKey(),SelectSubjectElement.CLASS_TEACHER_PATH.getPath()).click();
+
+        Thread.sleep(3000);
+
+        methods.getWebElement(SelectSubjectElement.CLASS_TEACHER_UPLOAD_PATH.getKey(),SelectSubjectElement.CLASS_TEACHER_UPLOAD_PATH.getPath()).click();
+    }
+
+    /**创建校内选课任务*/
+    public static void createSchoolTask(Methods methods) {
+
+    }
+    /**应用选课数据操作*/
+    public static String useDataTest(Methods methods) throws Exception{
+
+        methods.getWebElement(SelectSubjectElement.USE_SELECT_COURSE_PATH.getKey(),SelectSubjectElement.USE_SELECT_COURSE_PATH.getPath()).click();
+
+        Thread.sleep(5000);
+
+        methods.getWebElement(SelectSubjectElement.SELECT_COURSE_BUTTON_PATH.getKey(),SelectSubjectElement.SELECT_COURSE_BUTTON_PATH.getPath()).click();
+
+        Thread.sleep(10000);
+
+        String success_text = methods.getWebElement(SelectSubjectElement.USE_COURSE_SUCCESS_TXT_PATH.getKey(),SelectSubjectElement.USE_COURSE_SUCCESS_TXT_PATH.getPath()).getText();
+
+        return success_text;
+    }
 }

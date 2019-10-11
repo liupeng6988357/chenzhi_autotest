@@ -1,4 +1,4 @@
-package com.chenzhi.test.selectcourse;
+package com.chenzhi.test.selectcourse.entrancetest;
 
 
 import com.chenzhi.module.business.HomeFunction;
@@ -19,7 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-public class SelectTestCourseTask {
+public class SelectCourseTaskList {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
 
@@ -70,9 +70,6 @@ public class SelectTestCourseTask {
         }
     }
 
-
-
-
     /**
      * 更新高考选科任务姓名功能测试
      * @throws Exception
@@ -85,7 +82,6 @@ public class SelectTestCourseTask {
         Assert.assertEquals(result,"SUCCESS","Not equals: ");
 
     }
-
 
     /**
      * 删除高考选考任务功能测试
@@ -112,6 +108,5 @@ public class SelectTestCourseTask {
         }
 
     }
-
 
 }
