@@ -40,6 +40,11 @@ public class Locator{
         return driver.findElement(By.id(id));
     }
 
+    /**根据标签名获取元素*/
+    public WebElement getElementByTagName(String tagname){
+        return driver.findElement(By.tagName(tagname));
+    }
+
     /**通过css_seclector定位元素*/
     public WebElement getElementByCss_Secltor(String css_selector){
         return driver.findElement(By.cssSelector(css_selector));

@@ -34,6 +34,9 @@ public class Methods extends Locator {
         }else if (key.contains("Css_Selector")){
 
             return getElementByCss_Secltor(path);
+        }else if (key.contains("TagName")) {
+
+            return getElementByTagName(path);
         }else {
             return null;
         }

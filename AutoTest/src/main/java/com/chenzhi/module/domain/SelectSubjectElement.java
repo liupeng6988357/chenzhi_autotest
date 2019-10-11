@@ -19,11 +19,37 @@ public enum SelectSubjectElement {
     SELECT_YES_BUTTON("ClassName","theme_btn"),
 
     /**table_path*/
+    COMMON_TR_Number_PATH("xpath","//*[@id=\"page\"]/div/span"),
+
     COMMON_CELL_PATH("xpath","//*[@id=\"selectTaskList\"]/div[2]/div[1]/table/tbody"),
 
     DELETE_BUTTON_PATH("xpath","//*[@id=\"createSelectTask\"]/h2/div/button"),
 
-    DELETE_OK_BUTTON_PATH("xpath","//*[@id=\"selectCourseHome\"]/div/div[3]/div[2]/div[1]/select-task/div/div[2]/div[3]/div[2]/div[2]/div/button")
+    DELETE_OK_BUTTON_PATH("xpath","//*[@id=\"selectCourseHome\"]/div/div[3]/div[2]/div[1]/select-task/div/div[2]/div[3]/div[2]/div[2]/div/button"),
+
+    WECHAT_OK_BUTTON("xpath","//*[@id=\"wechatGuide\"]/div/div[1]/div[2]/div[2]/button"),
+
+    /**学生检索Select*/
+    STUDENT_SELECT_PATH("xpath","//*[@id=\"createSelectTask\"]/div[2]/div[1]/select[2]"),
+
+    STUDENT_CLASS_Select_PATH("xpath","//*[@id=\"createSelectTask\"]/div[2]/div[1]/select[1]"),
+
+    STUDENT_TABLE_LIST_PATH("xpath","//*[@id=\"createSelectTask\"]/div[2]/div[2]/table/tbody"),
+
+    COURSE_LABLE_PATH("ClassName","cz_radio_dom_span"),
+
+    UPDATE_COURSE_OK_BUTTON("xpath","//*[@id=\"stuList\"]/div[2]/div/div[2]/div[5]/button"),
+
+    STUDENT_NAME_INPUT_PATH("xpath","/html/body/div[2]/div[2]/div/div/ui-view/div/div/div[3]/div[2]/div[1]/select-task/div/div[3]/div/div[1]/div[2]/div[1]/input"),
+
+    STUDENT_TR_NUMBER_PATH("xpath","//*[@id=\"stuListPage\"]/div/span[1]"),
+
+    STUDENT_PAGE_CHANGE_PATH("xpath","//*[@id=\"stuListPage\"]/div/span[2]/input"),
+
+    STUDENT_OK_BUTTON_PATH("xpath","//*[@id=\"stuListPage\"]/div/span[2]/button"),
+
+    /**导出学生列表按钮*/
+    UPLOAD_STUDENT_LIST_PATH("xpath","//*[@id=\"createSelectTask\"]/div[2]/div[1]/button"),
     ;
 
     private final String key;

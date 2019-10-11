@@ -7,6 +7,7 @@ import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.domain.SystemUploadFilePath;
 import com.chenzhi.module.system_interface.UploadFiles;
 import com.chenzhi.module.util.Methods;
+import com.chenzhi.module.util.PropertyValue;
 import com.chenzhi.module.util.ReadExcel;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,7 +34,7 @@ public class StudentsManager {
 
         methods = new Methods(chromeDriver);
 
-        LoginFunction.teacherLoginTest(methods,"17088263562","111111");
+        LoginFunction.teacherLoginTest(methods, PropertyValue.getValue("TeacherAccount"),PropertyValue.getValue("TeacherPassword"));
 
     }
 

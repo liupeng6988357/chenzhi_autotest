@@ -2,9 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="选科模块">
-    <test name="创建选科任务">
+    <test name="创建选科任务" parallel="methods" thread-count="1">
         <classes>
-            <class name="com.chenzhi.test.selectcourse.SelectTestCourseTask" ></class>
+            <class name="com.chenzhi.test.selectcourse.SelectTestCourseTask" >
+                <methods>
+                    <include name="createTask" description="创建高考选科"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

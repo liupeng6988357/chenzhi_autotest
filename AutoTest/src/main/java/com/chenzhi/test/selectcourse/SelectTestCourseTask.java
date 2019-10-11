@@ -5,6 +5,7 @@ import com.chenzhi.module.business.HomeFunction;
 import com.chenzhi.module.business.LoginFunction;
 import com.chenzhi.module.business.SelectSubjectFunction;
 import com.chenzhi.module.domain.LoginPageElement;
+import com.chenzhi.module.domain.SelectSubjectElement;
 import com.chenzhi.module.util.Methods;
 import com.chenzhi.module.util.RandomString;
 import org.openqa.selenium.WebDriver;
@@ -61,11 +62,12 @@ public class SelectTestCourseTask {
     @Test
     public void createTask() throws Exception{
 
-        String result = SelectSubjectFunction.createTask(methods, RandomString.getRandomString(4),"高一",
-                "",df.format(new Date().getTime()+3000000),false,false);
+        for (int i = 0; i < 100; i++) {
+            String result = SelectSubjectFunction.createTask(methods, RandomString.getRandomString(4),"高一",
+                    "",df.format(new Date().getTime()+3000000),false,false);
 
-        Assert.assertEquals(result,"SUCCESS","Not equals: ");
-
+            Assert.assertEquals(result,"SUCCESS","Not equals: ");
+        }
     }
 
 
@@ -78,7 +80,7 @@ public class SelectTestCourseTask {
     @Test
     public void updateTask() throws Exception{
 
-        String result = SelectSubjectFunction.updateTask(methods,"test001");
+        String result = SelectSubjectFunction.updateTask(methods,RandomString.getRandomString(4));
 
         Assert.assertEquals(result,"SUCCESS","Not equals: ");
 
@@ -92,9 +94,23 @@ public class SelectTestCourseTask {
     @Test
     public void deleteTask() throws Exception{
 
-       String result = SelectSubjectFunction.deleteTask(methods);
+        String rel_tr_number = methods.getWebElement(SelectSubjectElement.COMMON_TR_Number_PATH.getKey(),
+                SelectSubjectElement.COMMON_TR_Number_PATH.getPath()).getText();
 
-       Assert.assertEquals(result,"SUCCESS","Not equals: ");
+        String[] list = rel_tr_number.split(" ");
+
+        int  number  = Integer.valueOf(list[1]);
+
+        System.out.println(number);
+
+        for (int i = 0; i < number-1; i++) {
+
+            String result = SelectSubjectFunction.deleteTask(methods);
+
+            Assert.assertEquals(result,"SUCCESS","Not equals: ");
+
+        }
+
     }
 
 

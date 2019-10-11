@@ -14,7 +14,7 @@ public class PropertyValue {
             try {
                 prop.load(new InputStreamReader(
                         new BufferedInputStream(
-                                new FileInputStream("D:\\chenzhi_autotest\\AutoTest\\src\\main\\resources\\filepath.properties")),"gbk"));
+                                new FileInputStream("D:\\chenzhi_autotest\\AutoTest\\src\\main\\resources\\system.properties")),"gbk"));
             }catch (Exception e){
                 e.fillInStackTrace();
             }
