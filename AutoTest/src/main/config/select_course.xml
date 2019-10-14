@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="选科模块">
-    <test name="创建选科任务" parallel="methods" thread-count="1">
+<suite name="SelectCourse">
+    <test name="SelectCourseTaskList" parallel="methods" thread-count="1">
         <classes>
             <class name="com.chenzhi.test.selectcourse.entrancetest.SelectCourseTaskList" />
-            <class name="com.chenzhi.test.selectcourse.entrancetest.StudentListPage" />
+
             <class name="com.chenzhi.test.selectcourse.schoolselect.SelectCourseSchoolTaskList"></class>
+        </classes>
+    </test>
+    <test name="StudentList">
+        <classes>
+            <class name="com.chenzhi.test.selectcourse.entrancetest.StudentListPage" />
+            <class name="com.chenzhi.test.selectcourse.schoolselect.StudentListPage"></class>
+        </classes>
+    </test>
+    <test name="SelectCourseChart">
+        <classes>
+            <class name="com.chenzhi.test.selectcourse.entrancetest.StatisticalChartPage"></class>
         </classes>
     </test>
 </suite>

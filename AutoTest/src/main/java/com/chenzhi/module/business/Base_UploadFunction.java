@@ -13,7 +13,7 @@ public class Base_UploadFunction implements UploadFiles {
 
     /**上传老师数据*/
     @Override
-    public String uploadTeachers(Methods methods) throws Exception {
+    public  String uploadTeachers(Methods methods) throws Exception {
 
         methods.getWebElement(Base_ManagerElement.UPLOAD_TEACHER_INFORMATION_XPATH.getKey(), Base_ManagerElement.UPLOAD_TEACHER_INFORMATION_XPATH.getPath()).click();
 

@@ -32,7 +32,7 @@ public class LoginFunction {
     }
 
     /**学生登录操作执行*/
-    public static void studentLoginTest(Methods methods,String username, String password) {
+    public static void studentLoginTest(Methods methods,String username, String password) throws Exception{
 
         methods.getWebElement(LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getPath()).click();
 
@@ -41,6 +41,8 @@ public class LoginFunction {
         methods.getWebElement(LoginPageElement.PASSWORD_INPUT_XPATH.getKey(),LoginPageElement.PASSWORD_INPUT_XPATH.getPath()).sendKeys(password);
 
         methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).click();
+
+        Thread.sleep(5000);
     }
 
     /**学生id登录操作执行*/

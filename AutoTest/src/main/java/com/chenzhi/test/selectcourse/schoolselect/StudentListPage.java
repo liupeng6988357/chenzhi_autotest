@@ -76,7 +76,7 @@ public class StudentListPage {
     @Test
     public void uploadStudents() throws Exception{
 
-        SelectSubjectFunction.uploadStudentsList(methods);
+        SelectSubjectFunction.uploadsStudentsList(methods);
     }
 
     /**

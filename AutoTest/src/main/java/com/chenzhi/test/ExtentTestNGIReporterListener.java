@@ -10,17 +10,21 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.chenzhi.module.domain.ModuleData;
+import com.chenzhi.module.util.PropertyValue;
 import com.chenzhi.module.util.SendMail;
+import com.thoughtworks.selenium.webdriven.commands.GetValue;
 import org.testng.*;
 import org.testng.xml.XmlSuite;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ExtentTestNGIReporterListener implements IReporter {
     //生成的路径以及文件名
     private static final String OUTPUT_FOLDER = "test-output/";
     private static final String FILE_NAME = "testreport.html";
+
 
     private List<ModuleData> moduleDataList;
     private ExtentReports extent;
@@ -78,14 +82,16 @@ public class ExtentTestNGIReporterListener implements IReporter {
                     resultNode = suiteTest;
                 }
                 if(resultNode != null){
-                    resultNode.getModel().setName(suite.getName()+" : "+r.getTestContext().getName());
+                    resultNode.getModel().setName(r.getTestContext().getName());
                     if(resultNode.getModel().hasCategory()){
                         resultNode.assignCategory(r.getTestContext().getName());
                     }else{
-                        resultNode.assignCategory(suite.getName(),r.getTestContext().getName());
+                        resultNode.assignCategory(r.getTestContext().getName());
                     }
+                    /**设置开始时间和结束时间*/
                     resultNode.getModel().setStartTime(r.getTestContext().getStartDate());
                     resultNode.getModel().setEndTime(r.getTestContext().getEndDate());
+
                     //统计SuiteResult下的数据
                     int passSize = r.getTestContext().getPassedTests().size();
                     int failSize = r.getTestContext().getFailedTests().size();
@@ -139,16 +145,18 @@ public class ExtentTestNGIReporterListener implements IReporter {
         if(!reportDir.exists()&& !reportDir .isDirectory()){
             reportDir.mkdir();
         }
+        /**设置文件导出位置*/
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
         // 设置静态文件的DNS
         //怎么样解决cdn.rawgit.com访问不了的情况
         htmlReporter.config().setResourceCDN(ResourceCDN.EXTENTREPORTS);
 
-        htmlReporter.config().setDocumentTitle("辰知产品自动化测试报告");
-        htmlReporter.config().setReportName("辰知产品自动化测试报告");
+        htmlReporter.config().setDocumentTitle("辰知自动化测试报告");
+        htmlReporter.config().setReportName("B端测试报告");
         htmlReporter.config().setChartVisibilityOnOpen(true);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-        htmlReporter.config().setTheme(Theme.DARK);
+        /**设置报告的主题样式*/
+        htmlReporter.config().setTheme(Theme.STANDARD);
         htmlReporter.config().setCSS(".node.level-1  ul{ display:none;} .node.level-1.active ul{display:block;}");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
@@ -189,7 +197,7 @@ public class ExtentTestNGIReporterListener implements IReporter {
                         name= name.substring(0,49)+"...";
                     }
                 }else{
-                    name = result.getMethod().getMethodName();
+                    name = PropertyValue.getValue(result.getMethod().getMethodName())+ "【"+result.getMethod().getMethodName()+"】";
                 }
                 if(extenttest==null){
                     test = extent.createTest(name);

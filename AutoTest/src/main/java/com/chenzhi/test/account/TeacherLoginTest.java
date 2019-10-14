@@ -19,8 +19,7 @@ public class TeacherLoginTest {
 
         private  Methods methods;
 
-
-        @BeforeMethod
+    @BeforeMethod
         public void beforeTest(){
 
             chromeDriver = new ChromeDriver();
@@ -41,60 +40,114 @@ public class TeacherLoginTest {
         }
 
 
-        /**
-         * 登录正常功能测试【判断是否登录成功，检查账户信息是否与期望一致】
-         * @throws Exception
-         */
-        @Test
-        public void tea_LoginTest() throws Exception{
+    /**
+     * 登录正常功能测试【判断是否登录成功，检查账户信息是否与期望一致】
+     * @throws Exception
+     */
+    @Test
+    public void tea_LoginTest() throws Exception{
 
-            LoginFunction.teacherLoginTest(methods,"13022862399","111111");
+        LoginFunction.teacherLoginTest(methods,"13022862399","111111");
 
-            Thread.sleep(5000);
+        Thread.sleep(5000);
 
-            String icoText = methods.getWebElement(HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getKey(),
-                    HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getPath()).getText();
+        String icoText = methods.getWebElement(HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getKey(),
+                HomePageElement.TEACHER_ACCOUNTNAME_ICO_XPATH.getPath()).getText();
 
-            Assert.assertEquals(icoText,"高新一中 赵四","Not equals: ");
+        Assert.assertEquals(icoText,"高新一中 赵四","Not equals: ");
 
-        }
+    }
+
+    /**
+     * 登录账号和密码为空
+     * @throws Exception
+     */
+    @Test
+    public void tea_LoginAccountAndPwdIsNullTest() throws Exception{
+
+        LoginFunction.teacherLoginTest(methods,"","");
+
+        Thread.sleep(5000);
+
+        String errorText = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
+                LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
+
+        Assert.assertEquals(errorText,"登录","Not equals: ");
+
+    }
+
+    /**
+     * 登录密码为空
+     * @throws Exception
+     */
+    @Test
+    public void tea_LoginPwdIsNullTest() throws Exception{
+
+        LoginFunction.teacherLoginTest(methods,"13022862399","");
+
+        Thread.sleep(5000);
+
+        String errorText = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
+                LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
+
+        Assert.assertEquals(errorText,"登录","Not equals: ");
+
+    }
+
+    /**
+     * 登录账号为空
+     * @throws Exception
+     */
+    @Test
+    public void tea_LoginAccountIsNullTest() throws Exception{
+
+        LoginFunction.teacherLoginTest(methods,"13022862399","");
+
+        Thread.sleep(5000);
+
+        String errorText = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
+                LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
+
+        Assert.assertEquals(errorText,"登录","Not equals: ");
+
+    }
 
 
-        /**
-         * 登录异常功能测试【密码错误】【判断是否登录成功，检查提示信息是否与期望一致】
-         * @throws Exception
-         */
-        @Test(description = "密码错误登录功能测试")
-        public void tea_LoginAccountTest() throws Exception{
+    /**
+     * 登录异常功能测试【密码错误】【判断是否登录成功，检查提示信息是否与期望一致】
+     * @throws Exception
+     */
+    @Test(description = "密码错误登录功能测试")
+    public void tea_LoginAccountErrorTest() throws Exception{
 
-            LoginFunction.teacherLoginTest(methods,"111","120");
+        LoginFunction.teacherLoginTest(methods,"66666","111111");
 
-            Thread.sleep(1000);
+        Thread.sleep(1000);
 
-            String errorText = methods.getWebElement(LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getKey(),
-                    LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getPath()).getText();
+        String errorText = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
+                    LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
 
-            Assert.assertEquals(errorText,"帐号信息有误","Not equals: ");
+        Assert.assertEquals(errorText,"登录","Not equals: ");
 
-        }
+    }
 
 
-        /**
-         * 登录异常功能测试【账号错误】【判断是否登录成功，检查提示信息是否与期望一致】
-         * @throws Exception
-         */
-        @Test(description = "密码错误登录功能测试")
-        public void tea_LoginPasswordTest() throws Exception{
+    /**
+     * 登录异常功能测试【账号错误】【判断是否登录成功，检查提示信息是否与期望一致】
+     * @throws Exception
+     */
+    @Test(description = "密码错误登录功能测试")
+    public void tea_LoginPasswordErrorTest() throws Exception{
 
-            LoginFunction.teacherLoginTest(methods,"111","120");
+        LoginFunction.teacherLoginTest(methods,"13022862399","120");
 
-            Thread.sleep(1000);
+        Thread.sleep(1000);
 
-            String errorText = methods.getWebElement(LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getKey(),
-                    LoginPageElement.EXCEPTIONG_MESSAGE_XPATH.getPath()).getText();
+        String errorText = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
+                LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
 
-            Assert.assertEquals(errorText,"帐号信息有误","Not equals: ");
-        }
+        Assert.assertEquals(errorText,"登录","Not equals: ");
+    }
 
 }
 

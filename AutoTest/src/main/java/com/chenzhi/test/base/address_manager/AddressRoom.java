@@ -35,6 +35,14 @@ public class AddressRoom {
 
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
 
+        try{
+            /**进入教室管理页面*/
+            HomeFunction.enterClassAddressManagerPage(methods);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
     }
 
 
@@ -50,15 +58,12 @@ public class AddressRoom {
      * 上传功能测试用例【只上传一个年级】
      * @throws Exception
      */
-    @Test(invocationCount = 5)
+    @Test
     public void uploadAddress() throws Exception{
 
         String filePath = SystemUploadFilePath.ADDRESS_FILR_PATH.getPath();
 
         int excelNumber = ReadExcel.getExcelRows(filePath,"教室详情")-1;
-
-        /**进入教室管理页面*/
-        HomeFunction.enterClassAddressManagerPage(methods);
 
         UploadFiles uploadFiles = new Base_UploadFunction();
 
@@ -66,6 +71,8 @@ public class AddressRoom {
         String resultText = uploadFiles.uploadClassAddress(methods);
 
     }
+
+    /**删除教室功能测试*/
 
 
 }

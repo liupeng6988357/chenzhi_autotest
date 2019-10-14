@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class SelectSubjectFunction {
 
-    private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     /**创建高考选科任务测试*/
     public static String createTask(Methods methods,String taskName,String year,
@@ -304,18 +304,34 @@ public class SelectSubjectFunction {
         return null;
     }
 
-    /**下载学生列表功能*/
+    /**高考选科：下载学生列表功能*/
     public static int uploadStudentsList(Methods methods) throws Exception {
         Thread.sleep(5000);
 
         methods.getWebElement(SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getKey(),SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getPath()).click();
 
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");//设置日期格式
-        String time = df.format(new Date());
+        SimpleDateFormat dfs = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");//设置日期格式
+        String time = dfs.format(new Date());
         String timeName = time.replace(":","").replace(" ","").replace("-","");
 
         Thread.sleep(5000);
         int rows = ReadExcel.getExcelRows("C:\\Users\\EDZ\\Downloads\\"+timeName+".xls","学生选课详情");
+
+        System.out.println(rows);
+        return rows;
+    }
+
+    /**校内选科：下载学生列表功能*/
+    public static int uploadsStudentsList(Methods methods) throws Exception {
+        Thread.sleep(5000);
+
+        methods.getWebElement(SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getKey(),SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getPath()).click();
+
+        String time = df.format(new Date());
+        String timeName = time.replace(":","").replace(" ","").replace("-","");
+
+        Thread.sleep(5000);
+        int rows = ReadExcel.getExcelRows("C:\\Users\\EDZ\\Downloads\\"+"学生选课列表"+timeName+".xlsx","学生选课详情");
 
         System.out.println(rows);
         return rows;

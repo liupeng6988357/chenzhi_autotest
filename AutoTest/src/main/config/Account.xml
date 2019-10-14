@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="登录模块">
+<suite name="登录模块" thread-count="4" parallel="tests" verbose="1">
 
-    <test name="【教师端】">
+    <test name="教师登录">
         <classes>
-            <class name="com.chenzhi.test.account.TeacherLoginTest"></class>
+            <class name="com.chenzhi.test.account.TeacherLoginTest"/>
         </classes>
     </test>
 
-    <test name="【学生端】">
+    <test name="学生登录">
         <classes>
-            <class name="com.chenzhi.test.account.StudentLoginTest"></class>
+            <class name="com.chenzhi.test.account.StudentLoginTest"/>
         </classes>
     </test>
 

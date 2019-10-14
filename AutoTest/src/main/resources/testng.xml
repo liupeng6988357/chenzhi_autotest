@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="辰知自动化测试">
+<suite name="SaaSAutomaticTest">
 
     <!--reportng测试报告-->
     <listeners >
@@ -20,11 +20,11 @@
 <!--        <suite-file path="../config/course_schedul.xml"></suite-file>-->
 
 
-        <!-- 选科模块 -->
-        <suite-file path="../config/select_course.xml"></suite-file>
+<!--        &lt;!&ndash; 选科模块 &ndash;&gt;-->
+<!--        <suite-file path="../config/select_course.xml"></suite-file>-->
 
-        <!--基础信息模块-->
-        <suite-file path="../config/base_information.xml"></suite-file>
+<!--        &lt;!&ndash;基础信息模块&ndash;&gt;-->
+<!--        <suite-file path="../config/base_information.xml"></suite-file>-->
 
 
     </suite-files>

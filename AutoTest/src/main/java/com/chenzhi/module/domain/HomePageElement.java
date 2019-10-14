@@ -6,7 +6,7 @@ public enum HomePageElement {
     /**老师账户信息*/
     TEACHER_ACCOUNTNAME_ICO_XPATH("xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[7]/a/i[2]"),
     /**学生账户信息*/
-    STUDENT_ACCOUNTNAME_ICO_XPATH("xpath","html/body/div[1]/div/div[2]/div[2]/ul/li[1]/a/i[2]"),
+    STUDENT_ACCOUNTNAME_ICO_XPATH("xpath","/html/body/div[1]/div/div[2]/div[2]/ul/li[1]/a/i[2]"),
 
     /**分班链接元素*/
     DEVIDED_CLASS_TITLE_LINK("Link","分班"),

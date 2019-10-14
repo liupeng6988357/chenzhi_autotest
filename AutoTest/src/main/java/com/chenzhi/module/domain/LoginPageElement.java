@@ -16,8 +16,6 @@ public enum LoginPageElement {
     PASSWORD_INPUT_XPATH("xpath","//input[@placeholder='密码']"),
     /**登录按钮*/
     LOGIN_BTN_CLASSNAME("ClassName","t_btn"),
-    /**异常信息弹框*/
-    EXCEPTIONG_MESSAGE_XPATH("xpath","/html/body/div[1]/ng-tip/div/span"),
     /**学生学号登录链接页签*/
     STUDENT_IDLOGIN_LINK_XPATH("xpath","/html/body/div[1]/div/div[1]/div/div/div[2]"),
     /**省会下拉框元素路径*/

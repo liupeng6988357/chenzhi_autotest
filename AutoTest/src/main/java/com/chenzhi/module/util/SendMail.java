@@ -119,7 +119,7 @@ public class SendMail {
                 content.append("<font style=\"color:#FF0000; font-family:等线\">"+"迭代版本主流程测试用例执行成功率为："+String.format("%.2f", ((versionSuccessNumber/versionSunNumber)*100)) +"%"+"<100%"+"，测试不通过！！！"+"</font>");
             }else {
 
-                content.append("<font style=\"color:#000000; font-family:等线\">"+"迭代版本主流程测试用例执行通过，测试通过！！！"+"</font>");
+                content.append("<font style=\"color:black; font-family:等线\">"+"迭代版本主流程测试用例执行通过，测试通过！！！"+"</font>");
             }
 
 
