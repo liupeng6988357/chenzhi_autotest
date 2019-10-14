@@ -6,6 +6,7 @@ import com.chenzhi.module.business.SelectSubjectFunction;
 import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.domain.SelectSubjectElement;
 import com.chenzhi.module.util.Methods;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,6 +37,9 @@ public class StudentListPage {
 
         chromeDriver.get(url);
 
+        Dimension dimension = new Dimension(1366,768);
+        chromeDriver.manage().window().setSize(dimension);
+
         methods = new Methods(chromeDriver);
 
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
@@ -54,7 +58,7 @@ public class StudentListPage {
 
         Thread.sleep(5000);
 
-        // chromeDriver.close();
+         chromeDriver.close();
     }
 
 
@@ -63,33 +67,12 @@ public class StudentListPage {
      * @throws Exception
      */
     @Test
-    public void createTask() throws Exception{
+    public void updateSelectCourseData() throws Exception{
 
-        Select select = methods.getWebSelect(SelectSubjectElement.STUDENT_SELECT_PATH.getKey(),SelectSubjectElement.STUDENT_SELECT_PATH.getPath());
-
-        Thread.sleep(3000);
-
-        String[] options = {"0","1","2"};
-
-        select.selectByValue(options[2]);
-
-        for (int i = 0; i <100 ; i++) {
-
-            Thread.sleep(3000);
-
-            methods.getWebElement(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(),SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath()+"/tr[1]/td[6]/a").click();
-
-            Thread.sleep(3000);
-
-            List<WebElement> elementList = methods.getWebElementList(SelectSubjectElement.COURSE_LABLE_PATH.getKey(),SelectSubjectElement.COURSE_LABLE_PATH.getPath());
-
-            elementList.get(10).click();
-
-            methods.getWebElement(SelectSubjectElement.UPDATE_COURSE_OK_BUTTON.getKey(),SelectSubjectElement.UPDATE_COURSE_OK_BUTTON.getPath()).click();
-
-        }
+        SelectSubjectFunction.updateSelectCourseData(methods,0,9);
 
     }
+
 
     /**学生列表检索功能测试*/
     @Test

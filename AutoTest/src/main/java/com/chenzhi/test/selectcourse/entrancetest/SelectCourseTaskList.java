@@ -8,6 +8,7 @@ import com.chenzhi.module.domain.LoginPageElement;
 import com.chenzhi.module.domain.SelectSubjectElement;
 import com.chenzhi.module.util.Methods;
 import com.chenzhi.module.util.RandomString;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -37,6 +38,9 @@ public class SelectCourseTaskList {
 
         chromeDriver.get(url);
 
+        Dimension dimension = new Dimension(1366,768);
+        chromeDriver.manage().window().setSize(dimension);
+
         methods = new Methods(chromeDriver);
 
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
@@ -51,7 +55,7 @@ public class SelectCourseTaskList {
 
         Thread.sleep(5000);
 
-       // chromeDriver.close();
+        chromeDriver.close();
     }
 
 
@@ -62,12 +66,10 @@ public class SelectCourseTaskList {
     @Test
     public void createTask() throws Exception{
 
-        for (int i = 0; i < 100; i++) {
             String result = SelectSubjectFunction.createTask(methods, RandomString.getRandomString(4),"高一",
                     "",df.format(new Date().getTime()+3000000),false,false);
 
             Assert.assertEquals(result,"SUCCESS","Not equals: ");
-        }
     }
 
     /**

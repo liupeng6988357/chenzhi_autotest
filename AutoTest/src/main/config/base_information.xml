@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="基础信息" parallel="tests" thread-count="5" verbose="2">
+<suite name="基础信息">
     <test name="学生管理">
         <classes >
             <class name="com.chenzhi.test.base.student_manager.StudentsManager" ></class>

@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
+
 
 /***
  * 选科功能测试方法
@@ -152,8 +154,6 @@ public class SelectSubjectFunction {
         }
         return "SUCCESS";
     }
-
-
 
     /**
      *选课任务--学生列表--检索功能操作
@@ -335,10 +335,6 @@ public class SelectSubjectFunction {
         methods.getWebElement(SelectSubjectElement.CLASS_TEACHER_UPLOAD_PATH.getKey(),SelectSubjectElement.CLASS_TEACHER_UPLOAD_PATH.getPath()).click();
     }
 
-    /**创建校内选课任务*/
-    public static void createSchoolTask(Methods methods) {
-
-    }
     /**应用选课数据操作*/
     public static String useDataTest(Methods methods) throws Exception{
 
@@ -353,5 +349,159 @@ public class SelectSubjectFunction {
         String success_text = methods.getWebElement(SelectSubjectElement.USE_COURSE_SUCCESS_TXT_PATH.getKey(),SelectSubjectElement.USE_COURSE_SUCCESS_TXT_PATH.getPath()).getText();
 
         return success_text;
+    }
+
+    /**校内选科任务新增功能操作*/
+    public  static void addSelectCourseTaskTest(Methods methods, String taskName, String year,
+                                                String startTime, String endTime, int selectCourseNum,
+                                                List<String> list, int humanNum) throws  Exception{
+
+        methods.getWebElement(SelectSubjectElement.CREATE_TASK_BUTTON.getKey(),SelectSubjectElement.CREATE_TASK_BUTTON.getPath()).click();
+
+        methods.getWebElement(SelectSubjectElement.SELECT_SUBJECT_NAME.getKey(),SelectSubjectElement.SELECT_SUBJECT_NAME.getPath()).sendKeys(taskName);
+
+        methods.getWebSelect(SelectSubjectElement.SELECT_SUBJECT_YEAR.getKey(),SelectSubjectElement.SELECT_SUBJECT_YEAR.getPath()).selectByVisibleText(year);
+
+        if (!startTime.equals("")){
+
+            WebElement start = methods.getWebElement(SelectSubjectElement.SELECT_SUBJECT_START_TIME.getKey(),SelectSubjectElement.SELECT_SUBJECT_START_TIME.getPath());
+
+            start.clear();
+
+            start.sendKeys(startTime);
+
+        }
+
+        if (!endTime.equals("")){
+
+            WebElement end = methods.getWebElement(SelectSubjectElement.SELECT_SUBJECT_END_TIME.getKey(),SelectSubjectElement.SELECT_SUBJECT_END_TIME.getPath());
+
+            end.clear();
+
+            end.sendKeys(endTime);
+        }
+
+        Thread.sleep(3000);
+
+        WebElement selectCourseNumInput = methods.getWebElement(SelectSubjectElement.COURSE_SELECT_NUMBER_PATH.getKey(),SelectSubjectElement.COURSE_SELECT_NUMBER_PATH.getPath());
+
+        selectCourseNumInput.clear();
+
+        /**学生必选课数目设置*/
+        selectCourseNumInput.sendKeys(String.valueOf(selectCourseNum));
+
+        for (int i = 0; i < selectCourseNum + 1; i++) {
+            methods.getWebElement(SelectSubjectElement.COURSE_SELECT_BUTTON_PATH.getKey(),SelectSubjectElement.COURSE_SELECT_BUTTON_PATH.getPath()).click();
+
+            Thread.sleep(5000);
+            methods.getWebSelect(SelectSubjectElement.COURSE_SELECT_PATH.getKey(),SelectSubjectElement.COURSE_SELECT_PATH.getPath()).selectByVisibleText(list.get(0));
+
+            Thread.sleep(3000);
+
+            methods.getWebSelect(SelectSubjectElement.COURSE_SECOND_SELECT_PATH.getKey(),SelectSubjectElement.COURSE_SECOND_SELECT_PATH.getPath()).selectByVisibleText(list.get(i+1));
+
+            WebElement humanInput = methods.getWebElement(SelectSubjectElement.HUMAN_NUMBER_INPUT_PATH.getKey(),SelectSubjectElement.HUMAN_NUMBER_INPUT_PATH.getPath());
+
+            humanInput.clear();
+
+            humanInput.sendKeys(String.valueOf(humanNum));
+
+            methods.getWebElement(SelectSubjectElement.COURSE_OK_BUTTON_PATH.getKey(),SelectSubjectElement.COURSE_OK_BUTTON_PATH.getPath()).click();
+
+        }
+
+        methods.getWebElement(SelectSubjectElement.COURSE_TASK_OK_BUTTON_PATH.getKey(),SelectSubjectElement.COURSE_TASK_OK_BUTTON_PATH.getPath()).click();
+
+    }
+    /**删除校内选科任务*/
+    public static String deleteSelectCourseTaskTest(Methods methods) throws Exception{
+
+        String delTaskName = methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr[1]/td[2]").getText();
+
+        Thread.sleep(3000);
+
+        methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr[1]/td[7]/a[3]").click();
+
+        methods.getWebElement(SelectSubjectElement.DELETE_BUTTON_PATH.getKey(),SelectSubjectElement.DELETE_BUTTON_PATH.getPath()).click();
+
+        methods.getWebElement(SelectSubjectElement.DELETE_OK_SCHOOL_BUTTON_PATH.getKey(),SelectSubjectElement.DELETE_OK_SCHOOL_BUTTON_PATH.getPath()).click();
+
+        Thread.sleep(5000);
+
+        String taskName =  methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr[1]/td[2]").getText();
+
+        if (delTaskName.equals(taskName)){
+            return "FAILE";
+        }
+        return "SUCCESS";
+    }
+
+    /**高考选科，修改选科数据*/
+    public static void updateSelectCourseData(Methods methods,int studentSelectCourseType,int courseType) throws InterruptedException {
+        Select select = methods.getWebSelect(SelectSubjectElement.STUDENT_SELECT_PATH.getKey(),SelectSubjectElement.STUDENT_SELECT_PATH.getPath());
+
+        Thread.sleep(3000);
+
+        select.selectByValue(String.valueOf(studentSelectCourseType));
+
+        //for (int i = 0; i <100 ; i++) {
+
+        Thread.sleep(3000);
+
+        methods.getWebElement(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(),SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath()+"/tr[1]/td[6]/a").click();
+
+        Thread.sleep(3000);
+
+        List<WebElement> elementList = methods.getWebElementList(SelectSubjectElement.COURSE_LABLE_PATH.getKey(),SelectSubjectElement.COURSE_LABLE_PATH.getPath());
+
+        elementList.get(courseType).click();
+
+        methods.getWebElement(SelectSubjectElement.UPDATE_COURSE_OK_BUTTON.getKey(),SelectSubjectElement.UPDATE_COURSE_OK_BUTTON.getPath()).click();
+
+        //  }
+    }
+
+    /**校内选科，修改选科任务操作*/
+    public static String updateSchoolSelectCourseData(Methods methods,String taskName) throws Exception{
+
+        methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr[1]/td[7]/a[3]").click();
+
+        WebElement name_Input = methods.getWebElement(SelectSubjectElement.SELECT_SUBJECT_NAME.getKey(),SelectSubjectElement.SELECT_SUBJECT_NAME.getPath());
+
+        name_Input.clear();
+
+        name_Input.sendKeys(taskName);
+
+        methods.getWebElement(SelectSubjectElement.SELECT_YES_BUTTON.getKey(),SelectSubjectElement.SELECT_YES_BUTTON.getPath()).click();
+
+        Thread.sleep(5000);
+
+        String updatedTaskName = methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr[1]/td[2]").getText();
+
+        if (updatedTaskName.equals(taskName)){
+            return "SUCCESS";
+        }
+
+        return "FAILE";
+    }
+
+    /**修改选科信息*/
+    public static void updateStudentCourseData(Methods methods) throws Exception{
+
+        Thread.sleep(3000);
+
+        methods.getWebElement(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(),SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath()+"/tr[1]/td[6]/a").click();
+
+        Thread.sleep(3000);
+
+        Select isSelectCourse = methods.getWebSelect(SelectSubjectElement.IS_SELECT_COURSE_PATH.getKey(),SelectSubjectElement.IS_SELECT_COURSE_PATH.getPath());
+
+        List<WebElement> options = isSelectCourse.getOptions();
+
+        System.out.println(options.size());
+
+        isSelectCourse.selectByIndex(options.size()-1);
+
+        methods.getWebElement(SelectSubjectElement.SCHOOL_SELECT_OK_BUTTON_PATH.getKey(),SelectSubjectElement.SCHOOL_SELECT_OK_BUTTON_PATH.getPath()).click();
     }
 }

@@ -1,21 +1,18 @@
-package com.chenzhi.test.selectcourse.schoolselect;
+package com.chenzhi.test.selectcourse.entrancetest;
 
 import com.chenzhi.module.business.HomeFunction;
 import com.chenzhi.module.business.LoginFunction;
-import com.chenzhi.module.business.SelectSubjectFunction;
 import com.chenzhi.module.domain.LoginPageElement;
-import com.chenzhi.module.domain.SelectSubjectElement;
 import com.chenzhi.module.util.Methods;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.text.SimpleDateFormat;
 
-public class StudentListPage {
+public class StatisticalChartPage {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
 
@@ -40,11 +37,9 @@ public class StudentListPage {
 
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
 
-        HomeFunction.enterSchoolSelectCourseTaskList(methods);
+        HomeFunction.enterSelectCourseTaskListPage(methods);
 
-        Thread.sleep(5000);
-
-        methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr/td[7]/a[1]").click();
+        /**进入选科统计图页面*/
 
     }
 
@@ -58,37 +53,6 @@ public class StudentListPage {
     }
 
 
-    /**
-     * 学生列表检索测试
-     * @throws Exception
-     */
-    @Test
-    public void checkStudentListTest() throws Exception{
 
-        SelectSubjectFunction.searchStudentsTest(methods,"张",0,"全部班级");
-    }
-
-
-    /**
-     * 下载学生功能测试
-     * @throws Exception
-     */
-    @Test
-    public void uploadStudents() throws Exception{
-
-        SelectSubjectFunction.uploadStudentsList(methods);
-    }
-
-    /**
-     * 修改学生选科信息功能测试
-     * @throws Exception
-     */
-    @Test
-    public void updateStudentCourse() throws Exception{
-
-        SelectSubjectFunction.updateStudentCourseData(methods);
-    }
-
-    /**课程列表显示测试*/
 
 }

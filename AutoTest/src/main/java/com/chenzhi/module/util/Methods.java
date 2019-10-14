@@ -55,6 +55,9 @@ public class Methods extends Locator {
         }else if (key.contains("Link")){
 
             return getSelectByLink(path);
+        }else if (key.contains("id")){
+
+            return getSelectById(path);
         }else {
             return null;
         }

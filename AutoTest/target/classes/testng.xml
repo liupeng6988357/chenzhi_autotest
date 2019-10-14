@@ -10,8 +10,8 @@
 
 
     <suite-files >
-<!--        &lt;!&ndash;登录模块&ndash;&gt;-->
-<!--        <suite-file path="../config/Account.xml"></suite-file>-->
+        <!--登录模块-->
+        <suite-file path="../config/Account.xml"></suite-file>
 
 <!--        &lt;!&ndash; 分班模块 &ndash;&gt;-->
 <!--        <suite-file path="../config/devide_class.xml"></suite-file>-->
@@ -24,7 +24,7 @@
         <suite-file path="../config/select_course.xml"></suite-file>
 
         <!--基础信息模块-->
-<!--        <suite-file path="../config/base_information.xml"></suite-file>-->
+        <suite-file path="../config/base_information.xml"></suite-file>
 
 
     </suite-files>

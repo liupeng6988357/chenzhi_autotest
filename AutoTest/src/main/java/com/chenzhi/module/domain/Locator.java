@@ -60,16 +60,20 @@ public class Locator{
         return new Select(driver.findElement(By.xpath(xpath)));
     }
 
-    /**通过xpath获取Select对象*/
+    /**通过className获取Select对象*/
     public Select getSelectByClassName(String classname){
         return new Select(driver.findElement(By.className(classname)));
     }
 
-    /**通过xpath获取Select对象*/
+    /**通过LINK获取Select对象*/
     public Select getSelectByLink(String linkPath){
         return new Select(driver.findElement(By.linkText(linkPath)));
     }
 
+    /**通过id获取Select对象*/
+    public Select getSelectById(String id){
+        return new Select(driver.findElement(By.id(id)));
+    }
 
     /**通过xpath获取webelement列表*/
     public List<WebElement> getElementsByXpath(String xpath){
