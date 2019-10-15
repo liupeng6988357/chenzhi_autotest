@@ -4,6 +4,9 @@ public enum SelectSubjectElement {
 
     START_ADD_TASK_BUTTON("xpath","//*[@id=\"selectTaskList\"]/div[2]/p/span"),
 
+    /**选课策略图片按钮*/
+    ICON_BUTTON_SELECT_PATH("xpath","//div[@class='tactics active']"),
+
     /**新增选课任务按钮，高考选课和校内选课共用*/
     CREATE_TASK_BUTTON("xpath","//*[@id=\"selectTaskList\"]/h3/div/i"),
 
@@ -101,8 +104,16 @@ public enum SelectSubjectElement {
     IS_SELECT_COURSE_PATH("xpath","//*[@id=\"stuList\"]/div[2]/div/div[2]/div[4]/select"),
 
     /**校内选科，确定按钮*/
-    SCHOOL_SELECT_OK_BUTTON_PATH("xpath","//*[@id=\"stuList\"]/div[2]/div/div[2]/div[5]/button")
+    SCHOOL_SELECT_OK_BUTTON_PATH("xpath","//*[@id=\"stuList\"]/div[2]/div/div[2]/div[5]/button"),
 
+    /**选课策略：年级下拉框*/
+    SELECT_COURSE_YEAR_PLAN_SELECT("xpath","//select[@class='ng-pristine ng-valid ng-empty ng-touched']"),
+
+    /**选课策略：选课任务下拉框*/
+    SELECT_COURSE_PLAN_TASK_SELECT_PATH("xpath","//select[@class='ng-pristine ng-valid ng-empty ng-touched']"),
+
+    /**选课策略：学科分析-单科tr*/
+    COURSE_TABLE_TR_PATH("xpath","//div[@id='course']//tbody//tr"),
     ;
 
     private final String key;

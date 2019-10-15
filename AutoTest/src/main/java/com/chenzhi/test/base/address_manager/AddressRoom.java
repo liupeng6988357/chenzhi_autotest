@@ -63,7 +63,7 @@ public class AddressRoom {
 
         String filePath = SystemUploadFilePath.ADDRESS_FILR_PATH.getPath();
 
-        int excelNumber = ReadExcel.getExcelRows(filePath,"教室详情")-1;
+        int excelNumber = ReadExcel.getExcelRowsXls(filePath,"教室详情")-1;
 
         UploadFiles uploadFiles = new Base_UploadFunction();
 

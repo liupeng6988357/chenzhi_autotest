@@ -56,7 +56,7 @@ public class GradeManager {
 
         String filePath = SystemUploadFilePath.SCORE_FILE_PATH.getPath();
 
-        int excelNumber = ReadExcel.getExcelRows(filePath,"高一")-1;
+        int excelNumber = ReadExcel.getExcelRowsXls(filePath,"高一")-1;
 
         /**进入成绩管理页面*/
         HomeFunction.enterGradeManagerPage(methods);

@@ -55,7 +55,7 @@ public class CourseManager {
 
         String filePath = SystemUploadFilePath.COURSE_FILE_PATH.getPath();
 
-        int excelNumber = ReadExcel.getExcelRows(filePath,"课程详情")-1;
+        int excelNumber = ReadExcel.getExcelRowsXls(filePath,"课程详情")-1;
 
         /**进入课程管理页面*/
         HomeFunction.enterCourseManagerPage(methods);

@@ -2,12 +2,15 @@ package com.chenzhi.module.business;
 
 
 import com.chenzhi.module.domain.SelectSubjectElement;
+import com.chenzhi.module.model.SelectCourseNum;
+import com.chenzhi.module.util.FileOperate;
 import com.chenzhi.module.util.Methods;
 import com.chenzhi.module.util.ReadExcel;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -17,7 +20,8 @@ import java.util.List;
  */
 public class SelectSubjectFunction {
 
-    private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private static SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    private static SimpleDateFormat dfst = new SimpleDateFormat("yyyy-MM-dd hh:mm");
 
     /**创建高考选科任务测试*/
     public static String createTask(Methods methods,String taskName,String year,
@@ -166,75 +170,46 @@ public class SelectSubjectFunction {
      */
     public static String  searchStudentsTest(Methods methods,String txt,int id,String className) throws InterruptedException {
         Thread.sleep(10000);
-
         /**输入模糊查询字段*/
         methods.getWebElement(SelectSubjectElement.STUDENT_NAME_INPUT_PATH.getKey(), SelectSubjectElement.STUDENT_NAME_INPUT_PATH.getPath()).sendKeys(txt);
-
         Select stuSelectCourseType = methods.getWebSelect(SelectSubjectElement.STUDENT_SELECT_PATH.getKey(), SelectSubjectElement.STUDENT_SELECT_PATH.getPath());
-
         /**选择检索类型：0，1，2*/
         stuSelectCourseType.selectByValue(String.valueOf(id));
-
         Select stuClass = methods.getWebSelect(SelectSubjectElement.STUDENT_CLASS_Select_PATH.getKey(), SelectSubjectElement.STUDENT_CLASS_Select_PATH.getPath());
-
         /**选择班级检索类型：*/
         stuClass.selectByVisibleText(className);
-
         Thread.sleep(5000);
-
         String rel_tr_number = methods.getWebElementList(SelectSubjectElement.STUDENT_TR_NUMBER_PATH.getKey(),
                 SelectSubjectElement.STUDENT_TR_NUMBER_PATH.getPath()).get(0).getAttribute("innerText");
-
         String[] list = rel_tr_number.split(" ");
-
         if (rel_tr_number.equals("共 0 条")) {
-
             return "NO DATA";
         }
-
         int number = Integer.valueOf(list[1]);
-
         System.out.println(number);
-
         if (number < 10) {
-
             int tr_number = methods.getWebElementList(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(), SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath() + "/tr").size();
-
             System.out.println(tr_number);
-
             for (int i = 1; i <= tr_number; i++) {
-
                 String x = checkLogic(methods, txt, id, className, i);
                 if (x != null) return x;
             }
-
         } else {
             int stuId = number / 10;
-
             System.out.println(stuId);
-
             for (int i = 1; i <= stuId+1; i++) {
-
                 WebElement inputPage = methods.getWebElement(SelectSubjectElement.STUDENT_PAGE_CHANGE_PATH.getKey(), SelectSubjectElement.STUDENT_PAGE_CHANGE_PATH.getPath());
-
                 inputPage.clear();
                 inputPage.sendKeys(String.valueOf(i));
-
                 methods.getWebElement(SelectSubjectElement.STUDENT_OK_BUTTON_PATH.getKey(), SelectSubjectElement.STUDENT_OK_BUTTON_PATH.getPath()).click();
-
                 Thread.sleep(3000);
-
                 int tr_number = methods.getWebElementList(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(), SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath() + "/tr").size();
-
                 System.out.println(tr_number);
                 for (int j = 1; j <= tr_number; j++) {
-
                     String x = checkLogic(methods, txt, id, className, j);
                     if (x != null) return x;
                 }
-
                 System.out.println("---------------------------------------------");
-
             }
         }
 
@@ -305,36 +280,61 @@ public class SelectSubjectFunction {
     }
 
     /**高考选科：下载学生列表功能*/
-    public static int uploadStudentsList(Methods methods) throws Exception {
+    public static String uploadStudentsList(Methods methods) throws Exception {
+        List<String> lists = new ArrayList<String>();
         Thread.sleep(5000);
-
         methods.getWebElement(SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getKey(),SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getPath()).click();
-
-        SimpleDateFormat dfs = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");//设置日期格式
-        String time = dfs.format(new Date());
+        String time = dfst.format(new Date());
         String timeName = time.replace(":","").replace(" ","").replace("-","");
-
-        Thread.sleep(5000);
-        int rows = ReadExcel.getExcelRows("C:\\Users\\EDZ\\Downloads\\"+timeName+".xls","学生选课详情");
-
-        System.out.println(rows);
-        return rows;
+        Thread.sleep(10000);
+        List<String> list = FileOperate.getFiles("C:\\Users\\EDZ\\Downloads");
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).contains(timeName)){
+                lists.add(list.get(i));
+            }
+        }
+        if (lists.size() == 0) {
+            return "FIAL";
+        }else if (lists.size()>1){
+            throw new Exception("无法判断");
+        }else {
+            Thread.sleep(5000);
+            String filePath = lists.get(0).replaceAll("\\\\","\\\\\\\\");
+            System.out.println(filePath);
+            int rows = ReadExcel.getExcelRowsXls(filePath, "学生选课详情");
+            System.out.println(rows);
+            return "SUCCESS";
+        }
     }
 
     /**校内选科：下载学生列表功能*/
-    public static int uploadsStudentsList(Methods methods) throws Exception {
+    public static String uploadsStudentsList(Methods methods) throws Exception {
+
+        List<String> lists = new ArrayList<String>();
         Thread.sleep(5000);
-
         methods.getWebElement(SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getKey(),SelectSubjectElement.UPLOAD_STUDENT_LIST_PATH.getPath()).click();
-
         String time = df.format(new Date());
         String timeName = time.replace(":","").replace(" ","").replace("-","");
-
-        Thread.sleep(5000);
-        int rows = ReadExcel.getExcelRows("C:\\Users\\EDZ\\Downloads\\"+"学生选课列表"+timeName+".xlsx","学生选课详情");
-
-        System.out.println(rows);
-        return rows;
+        System.out.println(timeName);
+        Thread.sleep(10000);
+        List<String> list = FileOperate.getFiles("C:\\Users\\EDZ\\Downloads");
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).contains(timeName)){
+                lists.add(list.get(i));
+            }
+        }
+        if (lists.size() == 0) {
+            return "FIAL";
+        }else if (lists.size()>1){
+            throw new Exception("无法判断");
+        }else {
+            Thread.sleep(5000);
+            String filePath = lists.get(0).replaceAll("\\\\","\\\\\\\\");
+            System.out.println(filePath);
+            int rows = ReadExcel.getExcelRowsXlsx(filePath, "学生选课详情");
+            System.out.println(rows);
+            return "SUCCESS";
+        }
     }
 
     /**下载老师模板操作*/
@@ -519,5 +519,123 @@ public class SelectSubjectFunction {
         isSelectCourse.selectByIndex(options.size()-1);
 
         methods.getWebElement(SelectSubjectElement.SCHOOL_SELECT_OK_BUTTON_PATH.getKey(),SelectSubjectElement.SCHOOL_SELECT_OK_BUTTON_PATH.getPath()).click();
+    }
+
+    /**学科分析：单科分析数据检测操作*/
+    public static String checkCourseAnalyze(Methods methods) throws Exception{
+
+        SelectCourseNum  selectCourseNum = getCourseSelectedNum(methods);
+        System.out.println(selectCourseNum.getHistroyNum()+":::"+selectCourseNum.getPoliticsNum());
+
+        methods.getWebElement(SelectSubjectElement.ICON_BUTTON_SELECT_PATH.getKey(),SelectSubjectElement.ICON_BUTTON_SELECT_PATH.getPath()).click();
+        Select yearSelect = methods.getWebSelect(SelectSubjectElement.SELECT_COURSE_YEAR_PLAN_SELECT.getKey(),SelectSubjectElement.SELECT_COURSE_YEAR_PLAN_SELECT.getPath());
+        yearSelect.selectByVisibleText("高一年级");
+        Select taskSelect = methods.getWebSelect(SelectSubjectElement.SELECT_COURSE_PLAN_TASK_SELECT_PATH.getKey(),SelectSubjectElement.SELECT_COURSE_PLAN_TASK_SELECT_PATH.getPath());
+        taskSelect.selectByVisibleText("eqwew");
+        List<WebElement> webElementList = methods.getWebElementList(SelectSubjectElement.COURSE_TABLE_TR_PATH.getKey(),SelectSubjectElement.COURSE_TABLE_TR_PATH.getPath());
+        for (int i = 1; i <= webElementList.size(); i++) {
+            List<WebElement> lists = methods.getWebElementList(SelectSubjectElement.COURSE_TABLE_TR_PATH.getKey(),SelectSubjectElement.COURSE_TABLE_TR_PATH.getPath()+"["+i+"]"+"//td");
+            for (int j = 1; j <= lists.size(); j++) {
+                String string = methods.getWebElement(SelectSubjectElement.COURSE_TABLE_TR_PATH.getKey(),SelectSubjectElement.COURSE_TABLE_TR_PATH.getPath()+"["+i+"]"+"//td"+"["+j+"]").getText();
+                System.out.print(string+"++++++++++");
+            }
+            System.out.println();
+        }
+
+
+        return null;
+    }
+
+    /**统计选课数据*/
+    private static SelectCourseNum getCourseSelectedNum(Methods methods) throws Exception{
+        SelectCourseNum  selectCourseNum = new SelectCourseNum();
+        Select stuSelectCourseType = methods.getWebSelect(SelectSubjectElement.STUDENT_SELECT_PATH.getKey(), SelectSubjectElement.STUDENT_SELECT_PATH.getPath());
+        /**选择检索类型：0，1，2*/
+        stuSelectCourseType.selectByValue(String.valueOf(1));
+
+        Thread.sleep(5000);
+        String rel_tr_number = methods.getWebElementList(SelectSubjectElement.STUDENT_TR_NUMBER_PATH.getKey(),
+                SelectSubjectElement.STUDENT_TR_NUMBER_PATH.getPath()).get(0).getAttribute("innerText");
+        String[] list = rel_tr_number.split(" ");
+        if (rel_tr_number.equals("共 0 条")) {
+            return null;
+        }
+        int number = Integer.valueOf(list[1]);
+        System.out.println(number);
+        if (number < 10) {
+            int tr_number = methods.getWebElementList(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(), SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath() + "/tr").size();
+            System.out.println(tr_number);
+            for (int i = 1; i <= tr_number; i++) {
+                String couresCombinate = methods.getWebElement(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(), SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath() + "/tr[" + i + "]/td[5]").getText();
+                String[] strings = couresCombinate.split("\\+");
+                for (int j = 0; j < strings.length; j++) {
+                    switch (strings[j]){
+                        case "化学":
+                            selectCourseNum.setChemistryNum(selectCourseNum.getChemistryNum()+1);
+                            break;
+                        case "物理":
+                            selectCourseNum.setPhysicsNum(selectCourseNum.getPhysicsNum()+1);
+                            break;
+                        case "生物":
+                            selectCourseNum.setBiologyNum(selectCourseNum.getBiologyNum()+1);
+                            break;
+                        case "历史":
+                            selectCourseNum.setHistroyNum(selectCourseNum.getHistroyNum()+1);
+                            break;
+                        case "地理":
+                            selectCourseNum.setGeographyNum(selectCourseNum.getGeographyNum()+1);
+                            break;
+                        case "政治":
+                            selectCourseNum.setPoliticsNum(selectCourseNum.getPoliticsNum()+1);
+                            break;
+                        case "技术":
+                            selectCourseNum.setArtisticalNum(selectCourseNum.getArtisticalNum()+1);
+                            break;
+                    }
+                }
+            }
+        } else {
+            int stuId = number / 10;
+            System.out.println(stuId);
+            for (int i = 1; i <= stuId + 1; i++) {
+                WebElement inputPage = methods.getWebElement(SelectSubjectElement.STUDENT_PAGE_CHANGE_PATH.getKey(), SelectSubjectElement.STUDENT_PAGE_CHANGE_PATH.getPath());
+                inputPage.clear();
+                inputPage.sendKeys(String.valueOf(i));
+                methods.getWebElement(SelectSubjectElement.STUDENT_OK_BUTTON_PATH.getKey(), SelectSubjectElement.STUDENT_OK_BUTTON_PATH.getPath()).click();
+                Thread.sleep(3000);
+                int tr_number = methods.getWebElementList(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(), SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath() + "/tr").size();
+                System.out.println(tr_number);
+                for (int j = 1; j <= tr_number; j++) {
+                    String couresCombinate = methods.getWebElement(SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getKey(), SelectSubjectElement.STUDENT_TABLE_LIST_PATH.getPath() + "/tr[" + j + "]/td[5]").getText();
+                    String[] courses = couresCombinate.split("\\+");
+                    for (int t = 0; t < courses.length; t++) {
+                        switch (courses[t]) {
+                            case "化学":
+                                selectCourseNum.setChemistryNum(selectCourseNum.getChemistryNum() + 1);
+                                break;
+                            case "物理":
+                                selectCourseNum.setPhysicsNum(selectCourseNum.getPhysicsNum() + 1);
+                                break;
+                            case "生物":
+                                selectCourseNum.setBiologyNum(selectCourseNum.getBiologyNum() + 1);
+                                break;
+                            case "历史":
+                                selectCourseNum.setHistroyNum(selectCourseNum.getHistroyNum() + 1);
+                                break;
+                            case "地理":
+                                selectCourseNum.setGeographyNum(selectCourseNum.getGeographyNum() + 1);
+                                break;
+                            case "政治":
+                                selectCourseNum.setPoliticsNum(selectCourseNum.getPoliticsNum() + 1);
+                                break;
+                            case "技术":
+                                selectCourseNum.setArtisticalNum(selectCourseNum.getArtisticalNum() + 1);
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+        return selectCourseNum;
     }
 }

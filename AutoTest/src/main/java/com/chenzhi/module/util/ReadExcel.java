@@ -3,7 +3,8 @@ package com.chenzhi.module.util;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
-import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ public class ReadExcel {
      * @return
      * @throws Exception
      */
-        public static int getExcelRows(String filePath,String sheetName) throws Exception{
+        public static int getExcelRowsXls(String filePath,String sheetName) throws Exception{
 
             File file = new File(filePath);
 
@@ -76,6 +77,16 @@ public class ReadExcel {
             /**获取sheet行数*/
             return sheet.getRows();
         }
+
+    public static int getExcelRowsXlsx(String filePath,String sheetName) throws Exception{
+        /** poi提供的Workbook类 */
+        XSSFWorkbook wb = new XSSFWorkbook(new FileInputStream(filePath));
+        /** Excel的页签*/
+        XSSFSheet xssfSheet = wb.getSheet(sheetName);
+        /**获取sheet行数*/
+        int rowNum = xssfSheet.getLastRowNum();
+        return rowNum;
+    }
 
 }
 

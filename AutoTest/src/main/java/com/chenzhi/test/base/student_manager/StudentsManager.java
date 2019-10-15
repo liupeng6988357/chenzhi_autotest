@@ -57,7 +57,7 @@ public class StudentsManager {
 
         String filePath = SystemUploadFilePath.STUDENT_FILE_PATH.getPath();
 
-        int excelNumber = ReadExcel.getExcelRows(filePath,"学生详情")-1;
+        int excelNumber = ReadExcel.getExcelRowsXls(filePath,"学生详情")-1;
 
         /**进入学生管理页面*/
         HomeFunction.enterStudentManagerPage(methods);
