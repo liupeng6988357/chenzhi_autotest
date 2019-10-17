@@ -33,13 +33,12 @@ public class StudentListPage {
         methods = new Methods(chromeDriver);
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
         HomeFunction.enterSelectCourseTaskListPage(methods);
-        Thread.sleep(5000);
+        methods.waitPageDataLoad();
         methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr/td[7]/a[1]").click();
     }
     @AfterMethod
     public void afterTest() throws Exception{
         Thread.sleep(5000);
-
          chromeDriver.close();
     }
 

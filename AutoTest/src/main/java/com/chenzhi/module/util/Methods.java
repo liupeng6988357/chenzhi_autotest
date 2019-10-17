@@ -10,10 +10,11 @@ import java.util.List;
 
 public class Methods extends Locator {
 
+    private WebDriver driver;
+
     public Methods(WebDriver webDriver){
         super(webDriver);
     }
-
 
     /**封装获取WebElement对象的方法*/
     public WebElement getWebElement(String key,String path){

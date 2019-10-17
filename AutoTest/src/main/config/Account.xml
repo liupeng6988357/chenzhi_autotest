@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="登录模块" thread-count="4" parallel="tests" verbose="1">
+<suite name="登录模块">
 
     <test name="教师登录">
         <classes>

@@ -5,7 +5,7 @@ public enum SelectSubjectElement {
     START_ADD_TASK_BUTTON("xpath","//*[@id=\"selectTaskList\"]/div[2]/p/span"),
 
     /**选课策略图片按钮*/
-    ICON_BUTTON_SELECT_PATH("xpath","//div[@class='tactics active']"),
+    ICON_BUTTON_SELECT_PATH("xpath","//*[@id=\"selectCourseHome\"]/div/div[3]/div[1]/div[2]"),
 
     /**新增选课任务按钮，高考选课和校内选课共用*/
     CREATE_TASK_BUTTON("xpath","//*[@id=\"selectTaskList\"]/h3/div/i"),
@@ -107,13 +107,22 @@ public enum SelectSubjectElement {
     SCHOOL_SELECT_OK_BUTTON_PATH("xpath","//*[@id=\"stuList\"]/div[2]/div/div[2]/div[5]/button"),
 
     /**选课策略：年级下拉框*/
-    SELECT_COURSE_YEAR_PLAN_SELECT("xpath","//select[@class='ng-pristine ng-valid ng-empty ng-touched']"),
+    SELECT_COURSE_YEAR_PLAN_SELECT("xpath","//*[@id=\"selectTactics\"]/div/div/div[1]/div/select[1]"),
 
     /**选课策略：选课任务下拉框*/
-    SELECT_COURSE_PLAN_TASK_SELECT_PATH("xpath","//select[@class='ng-pristine ng-valid ng-empty ng-touched']"),
+    SELECT_COURSE_PLAN_TASK_SELECT_PATH("xpath","//*[@id=\"selectTactics\"]/div/div/div[1]/div/select[2]"),
 
     /**选课策略：学科分析-单科tr*/
-    COURSE_TABLE_TR_PATH("xpath","//div[@id='course']//tbody//tr"),
+    COURSE_TABLE_TR_PATH("xpath","//*[@id=\"course\"]/div[2]/div[1]/div[1]/div/table/tbody/tr"),
+
+    /**学科分析：查看学生详情链接*/
+    SHOW_STUDENT_LIST_PATH("xpath","//*[@id=\"selectTactics\"]/div/div/div[2]/p[2]/span"),
+
+    /**学科分析：双科分析table--tr*/
+    DOUBLE_COURSE_TABLE_TR_PATH("xpath","//*[@id=\"doubel_course\"]/div[2]/div[1]/div[1]/div/table/tbody/tr"),
+
+    /**学科分析：三科分析table--tr*/
+    THREE_COURSE_TABLE_TR_PATH("xpath","//*[@id=\"compose\"]/div[2]/div[1]/div[1]/div/table/tbody/tr")
     ;
 
     private final String key;

@@ -6,6 +6,7 @@
     <!--reportng测试报告-->
     <listeners >
         <listener class-name="com.chenzhi.test.ExtentTestNGIReporterListener"/>
+        <listener class-name="com.chenzhi.module.util.TakeScreenshotListener" />
     </listeners>
 
 
@@ -23,8 +24,8 @@
         <!-- 选科模块 -->
         <suite-file path="../config/select_course.xml"></suite-file>
 
-<!--        &lt;!&ndash;基础信息模块&ndash;&gt;-->
-<!--        <suite-file path="../config/base_information.xml"></suite-file>-->
+        <!--基础信息模块-->
+        <suite-file path="../config/base_information.xml"></suite-file>
 
 
     </suite-files>

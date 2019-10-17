@@ -1,7 +1,7 @@
 package com.chenzhi.module.model;
 
-public class SelectCourseNum {
-
+public class SelectOneCourseNum {
+    private int sumNum;
     private int chineseNum;
     private int mathNum;
     private int englishNum;
@@ -12,6 +12,14 @@ public class SelectCourseNum {
     private int histroyNum;
     private int geographyNum;
     private int artisticalNum;
+
+    public int getSumNum() {
+        return sumNum;
+    }
+
+    public void setSumNum(int sumNum) {
+        this.sumNum = sumNum;
+    }
 
     public int getChineseNum() {
         return chineseNum;

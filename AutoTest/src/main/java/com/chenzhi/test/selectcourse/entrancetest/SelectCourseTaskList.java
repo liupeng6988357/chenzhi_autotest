@@ -23,13 +23,9 @@ import java.util.Date;
 public class SelectCourseTaskList {
 
     private String url = LoginPageElement.TEST_WEB_PATH.getPath();
-
     private WebDriver chromeDriver;
-
     private Methods methods;
-
     private SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-
 
     @BeforeMethod
     public void beforeTest() throws Exception{
@@ -48,8 +44,6 @@ public class SelectCourseTaskList {
         HomeFunction.enterSelectCourseTaskListPage(methods);
 
     }
-
-
     @AfterMethod
     public void afterTest() throws Exception{
 
@@ -57,7 +51,6 @@ public class SelectCourseTaskList {
 
         chromeDriver.close();
     }
-
 
     /**
      * 创建高考选科功能【自由选课,不分组】测试
@@ -71,7 +64,6 @@ public class SelectCourseTaskList {
 
             Assert.assertEquals(result,"SUCCESS","Not equals: ");
     }
-
     /**
      * 更新高考选科任务姓名功能测试
      * @throws Exception
@@ -84,7 +76,6 @@ public class SelectCourseTaskList {
         Assert.assertEquals(result,"SUCCESS","Not equals: ");
 
     }
-
     /**
      * 删除高考选考任务功能测试
      * @throws Exception

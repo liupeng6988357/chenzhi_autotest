@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="选科模块" thread-count="4" parallel="classes" verbose="1">
+<suite name="选科模块">
     <test name="选科任务列表">
         <classes>
             <class name="com.chenzhi.test.selectcourse.entrancetest.SelectCourseTaskList"></class>

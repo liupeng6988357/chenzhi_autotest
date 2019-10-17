@@ -6,17 +6,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Locator{
 
-    private WebDriver driver;
+    private static WebDriver driver;
 
     public Locator(WebDriver driver) {
         this.driver = driver;
     }
 
-
-    public WebDriver getDriver() {
+    public static   WebDriver getDriver() {
         return driver;
     }
 
@@ -90,5 +90,18 @@ public class Locator{
         driver.switchTo().frame(path);
     }
 
+    /**页面加载等待时间设置*/
+    public void  waitPageDataLoad(){
+        driver.manage().timeouts().pageLoadTimeout(30000, TimeUnit.SECONDS);
+    }
 
+    /**定位元素在规定时间内一直查询*/
+    public void waitElementShowTime(){
+        driver.manage().timeouts().implicitlyWait(15000,TimeUnit.SECONDS);
+    }
+
+    /**在设置规定的时间内，等待异步脚本的执行结束，而不是里面抛出错误。*/
+    public void waitScriptExcuteTime(){
+        driver.manage().timeouts().setScriptTimeout(15000,TimeUnit.SECONDS);
+    }
 }
