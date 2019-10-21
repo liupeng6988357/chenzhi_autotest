@@ -31,14 +31,14 @@ public class StudentListPage {
         Dimension dimension = new Dimension(1366,768);
         chromeDriver.manage().window().setSize(dimension);
         methods = new Methods(chromeDriver);
+        methods.getWebElement(LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getPath()).click();
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
         HomeFunction.enterSelectCourseTaskListPage(methods);
-        methods.waitPageDataLoad();
+        methods.waitElementShowTime();
         methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr/td[7]/a[1]").click();
     }
     @AfterMethod
     public void afterTest() throws Exception{
-        Thread.sleep(5000);
          chromeDriver.close();
     }
 
@@ -53,11 +53,8 @@ public class StudentListPage {
     /**学生列表检索功能测试*/
     @Test
     public void checkStudentList() throws Exception{
-
         String result = SelectSubjectFunction.searchStudentsTest(methods,"李",1,"全部班级");
-
         Assert.assertEquals(result,"SUCCESS","Not equals: ");
-
     }
     /**学生列表导出功能测试*/
     @Test
@@ -69,16 +66,12 @@ public class StudentListPage {
     /**学生列表：下载班主任模板测试*/
     @Test
     public void uploadClassTeacher() throws Exception {
-
         SelectSubjectFunction.uploadClassTeacher(methods);
     }
-
     /**应用数据功能测试,需要和基础信息进行对比*/
     @Test
     public void useDataTest() throws Exception{
-
         String result  = SelectSubjectFunction.useDataTest(methods);
-
         Assert.assertEquals(result,"成功应用本次选课","Not equals: ");
     }
 

@@ -25,6 +25,7 @@ public class StudentLoginTest {
         chromeDriver = new ChromeDriver();
         chromeDriver.get(url);
         methods = new Methods(chromeDriver);
+        methods.getWebElement(LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getPath()).click();
     }
     @AfterMethod
     public void afterTest() throws Exception {
@@ -39,7 +40,7 @@ public class StudentLoginTest {
     @Test(description = "学生登录功能测试")
     public void student_LoginPhoneTest() throws Exception {
         LoginFunction.studentLoginTest(methods, "13022862396", "111111");
-        methods.waitPageDataLoad();
+        methods.waitElementShowTime();
         String icoText = methods.getWebElement(HomePageElement.STUDENT_ACCOUNTNAME_ICO_XPATH.getKey(),
                 HomePageElement.STUDENT_ACCOUNTNAME_ICO_XPATH.getPath()).getText();
         Assert.assertEquals(icoText, "刘邦纳", "Not equals: ");
@@ -51,7 +52,7 @@ public class StudentLoginTest {
     @Test(description = "学生登录功能异常测试")
     public void student_LoginPhoneExceptionTest() throws Exception {
         LoginFunction.studentLoginTest(methods, "", "");
-        methods.waitPageDataLoad();
+        methods.waitElementShowTime();
         String errorMessage = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
                 LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
         Assert.assertEquals(errorMessage, "登录", "Not equals: ");
@@ -65,7 +66,7 @@ public class StudentLoginTest {
     public void student_LoginWorkIDTest() throws Exception {
         String[] params = new String[]{"浙江省", "杭州市", "富阳市", "浙江测试学校", "201704", "lp6988357"};
         LoginFunction.studentIDLoginExcute(methods, params);
-        methods.waitPageDataLoad();
+        methods.waitElementShowTime();
         String errorMessage = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
                 LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
         Assert.assertEquals(errorMessage, "登录", "Not equals: ");
@@ -75,7 +76,7 @@ public class StudentLoginTest {
      *
      * @throws Exception
      */
-    @Test
+    @Test(description = "省份下拉框值集测试")
     public void provinceValuesTest() throws Exception {
         List<String> selectValuesList = LoginFunction.getProvinceValues(methods);
         for (int i = 0; i < selectValuesList.size(); i++) {
@@ -86,7 +87,7 @@ public class StudentLoginTest {
      * 测试城市下拉框值集
      * @throws Exception
      */
-    @Test
+    @Test(description = "城市下拉框值集测试")
     public void cityValuesTest() throws Exception {
         Map<String, List<String>> cityValuesMap = LoginFunction.getCityValues(methods);
         for (Map.Entry<String, List<String>> entry : cityValuesMap.entrySet()) {

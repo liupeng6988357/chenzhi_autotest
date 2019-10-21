@@ -68,25 +68,16 @@ public class HomeFunction {
 
     /**进入选课任务页面*/
     public static void enterSelectCourseTaskListPage(Methods methods) throws Exception {
-
         SystemPageFunction.touchElement(methods, HomePageElement.SELECT_COURSE_TITLE_LINK.getKey(),HomePageElement.SELECT_COURSE_TITLE_LINK.getPath());
-
-        Thread.sleep(2000);
-
+        methods.waitElementShowTime();
         methods.getWebElement(HomePageElement.TEST_SELECT_COURSE_LINK.getKey(),HomePageElement.TEST_SELECT_COURSE_LINK.getPath()).click();
-
-        Thread.sleep(5000);
     }
 
     /**进入校内选课任务页面*/
     public static void enterSchoolSelectCourseTaskList(Methods methods) throws Exception{
-
         SystemPageFunction.touchElement(methods, HomePageElement.SELECT_COURSE_TITLE_LINK.getKey(),HomePageElement.SELECT_COURSE_TITLE_LINK.getPath());
-
         Thread.sleep(2000);
-
         methods.getWebElement(HomePageElement.IN_SCHOOL_SELECT_COURSE_LINK.getKey(),HomePageElement.IN_SCHOOL_SELECT_COURSE_LINK.getPath()).click();
-
         Thread.sleep(5000);
     }
 

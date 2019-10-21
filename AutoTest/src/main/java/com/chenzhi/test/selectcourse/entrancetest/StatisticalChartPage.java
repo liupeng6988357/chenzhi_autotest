@@ -30,6 +30,7 @@ public class StatisticalChartPage {
         Dimension dimension = new Dimension(1366,768);
         chromeDriver.manage().window().setSize(dimension);
         methods = new Methods(chromeDriver);
+        methods.getWebElement(LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getPath()).click();
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
         HomeFunction.enterSelectCourseTaskListPage(methods);
         Thread.sleep(5000);
@@ -37,7 +38,6 @@ public class StatisticalChartPage {
     }
     @AfterMethod
     public void afterTest() throws Exception{
-        Thread.sleep(5000);
         chromeDriver.close();
     }
 

@@ -16,13 +16,14 @@ public class TeacherLoginTest {
     private Methods methods;
 
     @BeforeMethod
-    public void beforeTest() {
+    public void beforeMethod() {
         chromeDriver = new ChromeDriver();
         chromeDriver.get(url);
         methods = new Methods(chromeDriver);
+        methods.getWebElement(LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getPath()).click();
     }
     @AfterMethod
-    public void afterTest() throws Exception {
+    public void afterMethod() throws Exception {
         Thread.sleep(5000);
         chromeDriver.close();
     }
@@ -86,7 +87,7 @@ public class TeacherLoginTest {
         methods.waitElementShowTime();
         String errorText = methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(),
                 LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).getText();
-        Assert.assertEquals(errorText, "登1", "Not equals: ");
+        Assert.assertEquals(errorText, "登录", "Not equals: ");
     }
     /**
      * 登录异常功能测试【账号错误】【判断是否登录成功，检查提示信息是否与期望一致】

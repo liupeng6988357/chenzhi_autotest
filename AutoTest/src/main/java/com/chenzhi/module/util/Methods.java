@@ -9,13 +9,10 @@ import java.util.List;
 
 
 public class Methods extends Locator {
-
     private WebDriver driver;
-
     public Methods(WebDriver webDriver){
         super(webDriver);
     }
-
     /**封装获取WebElement对象的方法*/
     public WebElement getWebElement(String key,String path){
         if (key.contains("xpath")){
@@ -42,7 +39,6 @@ public class Methods extends Locator {
             return null;
         }
     }
-
     /**封装获取Select对象的方法*/
     public Select getWebSelect(String key, String path){
         if (key.contains("xpath")){
@@ -63,27 +59,22 @@ public class Methods extends Locator {
             return null;
         }
     }
-
     /**封装获取WebElement对象的方法*/
     public List<WebElement> getWebElementList(String key, String path){
         if (key.contains("xpath")){
-
             return getElementsByXpath(path);
-
         }else if (key.contains("ClassName")){
-
             return getElementsByClassName(path);
-
         }else if (key.contains("Link")){
-
             return getElementsByLink(path);
         }else {
             return null;
         }
     }
 
+    /**切换Html页面*/
     @Override
-    public void switchFrame(String IFrame) {
+    public  void switchFrame(String IFrame) {
         super.switchFrame(IFrame);
     }
 }

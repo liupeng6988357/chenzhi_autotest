@@ -29,16 +29,15 @@ public class StudentListPage {
         Dimension dimension = new Dimension(1366,768);
         chromeDriver.manage().window().setSize(dimension);
         methods = new Methods(chromeDriver);
+        methods.getWebElement(LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getKey(),LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getPath()).click();
         LoginFunction.teacherLoginTest(methods,"13772940987","111111");
         HomeFunction.enterSchoolSelectCourseTaskList(methods);
-        Thread.sleep(5000);
+        methods.waitElementShowTime();
         methods.getWebElement(SelectSubjectElement.COMMON_CELL_PATH.getKey(),SelectSubjectElement.COMMON_CELL_PATH.getPath()+"/tr/td[7]/a[1]").click();
-
     }
 
     @AfterMethod
     public void afterTest() throws Exception{
-        Thread.sleep(5000);
         chromeDriver.close();
     }
 

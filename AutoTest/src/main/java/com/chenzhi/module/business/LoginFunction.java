@@ -16,13 +16,7 @@ public class LoginFunction {
      * 老师登录操作执行
      */
     public static void teacherLoginTest(Methods methods, String userName, String password) {
-        methods.getWebElement(LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getKey(), LoginPageElement.TEACHER_BTN_LOGIN_LINK_XPATH.getPath()).click();
-        methods.waitPageDataLoad();
-        try {
-            Thread.sleep(5000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        methods.waitElementShowTime();
         methods.getWebElement(LoginPageElement.USERNAME_INPUT_XPATH.getKey(), LoginPageElement.USERNAME_INPUT_XPATH.getPath()).sendKeys(userName);
         methods.getWebElement(LoginPageElement.PASSWORD_INPUT_XPATH.getKey(), LoginPageElement.PASSWORD_INPUT_XPATH.getPath()).sendKeys(password);
         methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(), LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).click();
@@ -32,7 +26,7 @@ public class LoginFunction {
      * 学生登录操作执行
      */
     public static void studentLoginTest(Methods methods, String username, String password) throws Exception {
-        methods.getWebElement(LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getKey(), LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getPath()).click();
+        methods.waitElementShowTime();
         methods.getWebElement(LoginPageElement.USERNAME_INPUT_XPATH.getKey(), LoginPageElement.USERNAME_INPUT_XPATH.getPath()).sendKeys(username);
         methods.getWebElement(LoginPageElement.PASSWORD_INPUT_XPATH.getKey(), LoginPageElement.PASSWORD_INPUT_XPATH.getPath()).sendKeys(password);
         methods.getWebElement(LoginPageElement.LOGIN_BTN_CLASSNAME.getKey(), LoginPageElement.LOGIN_BTN_CLASSNAME.getPath()).click();
@@ -41,7 +35,7 @@ public class LoginFunction {
      * 学生id登录操作执行
      */
     public static void studentIDLoginExcute(Methods methods, String[] params) throws Exception {
-        methods.getWebElement(LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getKey(), LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getPath()).click();
+        methods.waitElementShowTime();
         methods.getWebElement(LoginPageElement.STUDENT_IDLOGIN_LINK_XPATH.getKey(), LoginPageElement.STUDENT_IDLOGIN_LINK_XPATH.getPath()).click();
         methods.waitPageDataLoad();
         methods.getWebSelect(LoginPageElement.PROVINCE_SELECT_XPATH.getKey(), LoginPageElement.PROVINCE_SELECT_XPATH.getPath()).selectByVisibleText(params[0]);
@@ -60,7 +54,7 @@ public class LoginFunction {
      */
     public static List<String> getProvinceValues(Methods methods) throws Exception {
         List<String> list = new ArrayList<String>();
-        methods.getWebElement(LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getKey(), LoginPageElement.STUDENT_BTN_LOGIN_LINK_XPATH.getPath()).click();
+        methods.waitElementShowTime();
         methods.getWebElement(LoginPageElement.STUDENT_IDLOGIN_LINK_XPATH.getKey(), LoginPageElement.STUDENT_IDLOGIN_LINK_XPATH.getPath()).click();
         methods.waitElementShowTime();
         Select provinceSelect = methods.getWebSelect(LoginPageElement.PROVINCE_SELECT_XPATH.getKey(), LoginPageElement.PROVINCE_SELECT_XPATH.getPath());

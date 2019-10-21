@@ -9,12 +9,9 @@ public class SystemPageFunction {
 
     /**鼠标悬浮显示*/
     public static void touchElement(Methods methods, String key, String path) throws InterruptedException {
-        Thread.sleep(30000);
-
+        methods.waitElementShowTime();
         Actions actions = new Actions(methods.getDriver());
-
         WebElement nav = methods.getWebElement(key,path);
-
         actions.moveToElement(nav).build().perform();
     }
 }
